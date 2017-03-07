@@ -1,0 +1,39 @@
+#site {
+    padding-top: 60px;
+    background-color: #f8f8f8;
+}
+
+[class*="col-"], footer {
+    text-align: center;
+    padding: 10px;
+
+}
+.row {
+    margin-top: 5px;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#title{
+    border-bottom : 1px solid lightgrey;
+   border-image-slice: 
+}
+
+#slider{
+    border-bottom : 1px solid lightgrey;
+}
+
+#VoirAussi > div{
+    border-bottom : 1px solid lightgrey;
+}
+
+#article{
+    border-bottom: 1px solid lightgrey;
+}
+
+.footer{
+    border-top: 1px solid lightgrey;
+}

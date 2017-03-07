@@ -1,0 +1,3 @@
+ptut_test_homepage:
+    path:     /
+    defaults: { _controller: PTUTTestBundle:Test:index }

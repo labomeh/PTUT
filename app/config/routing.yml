@@ -1,0 +1,3 @@
+ptut_platform:
+    resource: "@PTUTPlatformBundle/Resources/config/routing.yml"
+    prefix:   /

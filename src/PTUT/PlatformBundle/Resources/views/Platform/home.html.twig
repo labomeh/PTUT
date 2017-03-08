@@ -1,54 +1,73 @@
 {% extends "PTUTPlatformBundle:Platform:layout.html.twig" %}
 
-{% block include %}
- <link href="../../web/bundles/ptutplatform/css/full-slider.css" rel="stylesheet">
-{% endblock %}
-
 {% block ongletHome %}active{%endblock%}
 
 {% block body %} 
 
-    <div id="corps" class="carousel slide">
-            <!-- Indicators -->
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide wet-asphalt">
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
             </ol>
-
-            <!-- Wrapper for Slides -->
             <div class="carousel-inner">
-                <div class="item active">
-                    <!-- Set the first background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 1</h2>
+                <div class="item active" style="background-image: url(../../web/bundles/ptutplatform/images/slider/bg1.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content centered">
+                                    <h2 class="animation animated-item-1">C dla merd</h2>
+                                    <p class="animation animated-item-2">that festival les gens dégueulent.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <!-- Set the second background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 2</h2>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(../../web/bundles/ptutplatform/images/slider/bg2.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation animated-item-1"> Wow il é tro faur</h2>
+                                    <p class="boxed animation animated-item-2"> c tro b1 </p>
+                                    <br>
+                                    <a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <!-- Set the third background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 3</h2>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(../../web/bundles/ptutplatform/images/slider/bg3.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content centered">
+                                    <h2 class="animation animated-item-1">.............................</h2>
+                                    <p class="animation animated-item-2">..........</p>
+                                    <a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="centered">
+                                    <div class="embed-container">
+                                        <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="icon-next"></span>
-            </a>
-
-    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="icon-angle-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="icon-angle-right"></i>
+        </a>
+    </section>
 
 {%endblock%}

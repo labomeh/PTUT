@@ -9,18 +9,18 @@
     <link rel="icon" href="../../favicon.ico">
     {% block include %} {% endblock %}
     <title>PTUT</title>
-    <link href="../../web/bundles/ptutplatform/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../web/bundles/ptutplatform/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../../web/bundles/ptutplatform/css/prettyPhoto.css" rel="stylesheet">
-    <link href="../../web/bundles/ptutplatform/css/animate.css" rel="stylesheet">
-    <link href="../../web/bundles/ptutplatform/css/main.css" rel="stylesheet">
+    <link href="bundles/ptutplatform/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bundles/ptutplatform/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bundles/ptutplatform/css/prettyPhoto.css" rel="stylesheet">
+    <link href="bundles/ptutplatform/css/animate.css" rel="stylesheet">
+    <link href="bundles/ptutplatform/css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="../../web/bundles/ptutplatform/js/html5shiv.js"></script>
     <script src="../../web/bundles/ptutplatform/js/respond.min.js"></script>
     <![endif]-->
     
-    <link rel="shortcut icon" href="../../web/bundles/ptutplatform/images/ico/favicon.ico">
+    <link rel="shortcut icon" href="bundles/ptutplatform/images/ico/favicon.ico">
 
 </head>
 <body id="site">
@@ -60,11 +60,22 @@
     {% endblock %}
         
     <footer id="footer" class="midnight-blue">
+        <div class="col-sm-6">
         <span class="text-muted">PTUT Manon Rajaonarivelo, Sunny Nguyen, Simon Pasquereau, Mehdi Labourdette, Antonin Guyot - IUT Informatique Lyon 1</span>
+        </div>
+        <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
+                    </ul>
+                </div>
     </footer> 
-    <script src="../../web/bundles/ptutplatform/js/jquery.js"></script>
-    <script src="../../web/bundles/ptutplatform/js/bootstrap.min.js"></script>
-    <script src="../../web/bundles/ptutplatform/js/jquery.prettyPhoto.js"></script>
-    <script src="../../web/bundles/ptutplatform/js/main.js"></script>
+    <script src="bundles/ptutplatform/js/jquery.js"></script>
+    <script src="bundles/ptutplatform/js/bootstrap.min.js"></script>
+    <script src="bundles/ptutplatform/js/jquery.prettyPhoto.js"></script>
+    <script src="bundles/ptutplatform/js/main.js"></script>
 </body>
 </html>

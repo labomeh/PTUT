@@ -22,47 +22,47 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5cc0ac809ce65cac2caa3133e88735482bd076009b8452498c9afbd12818d3af = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_5cc0ac809ce65cac2caa3133e88735482bd076009b8452498c9afbd12818d3af->enter($__internal_5cc0ac809ce65cac2caa3133e88735482bd076009b8452498c9afbd12818d3af_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:home.html.twig"));
+        $__internal_52f76457d57b3dcfdf5b825917d469feb09c977c73cf2933a8f9af1fb562ff01 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_52f76457d57b3dcfdf5b825917d469feb09c977c73cf2933a8f9af1fb562ff01->enter($__internal_52f76457d57b3dcfdf5b825917d469feb09c977c73cf2933a8f9af1fb562ff01_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:home.html.twig"));
 
-        $__internal_c279f917f58611e36cb5323204f878f990728332431820e650a69a3769a15798 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c279f917f58611e36cb5323204f878f990728332431820e650a69a3769a15798->enter($__internal_c279f917f58611e36cb5323204f878f990728332431820e650a69a3769a15798_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:home.html.twig"));
+        $__internal_34aa6a0e78e165ba9afa129e25243c481cd55439a166637f89a17289a5f54687 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_34aa6a0e78e165ba9afa129e25243c481cd55439a166637f89a17289a5f54687->enter($__internal_34aa6a0e78e165ba9afa129e25243c481cd55439a166637f89a17289a5f54687_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:home.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_5cc0ac809ce65cac2caa3133e88735482bd076009b8452498c9afbd12818d3af->leave($__internal_5cc0ac809ce65cac2caa3133e88735482bd076009b8452498c9afbd12818d3af_prof);
+        $__internal_52f76457d57b3dcfdf5b825917d469feb09c977c73cf2933a8f9af1fb562ff01->leave($__internal_52f76457d57b3dcfdf5b825917d469feb09c977c73cf2933a8f9af1fb562ff01_prof);
 
         
-        $__internal_c279f917f58611e36cb5323204f878f990728332431820e650a69a3769a15798->leave($__internal_c279f917f58611e36cb5323204f878f990728332431820e650a69a3769a15798_prof);
+        $__internal_34aa6a0e78e165ba9afa129e25243c481cd55439a166637f89a17289a5f54687->leave($__internal_34aa6a0e78e165ba9afa129e25243c481cd55439a166637f89a17289a5f54687_prof);
 
     }
 
     // line 3
     public function block_ongletHome($context, array $blocks = array())
     {
-        $__internal_9ed7813a2070d76f8f944f28a7a9ee5dbe95f29dd87819be88587d5f43a50eda = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_9ed7813a2070d76f8f944f28a7a9ee5dbe95f29dd87819be88587d5f43a50eda->enter($__internal_9ed7813a2070d76f8f944f28a7a9ee5dbe95f29dd87819be88587d5f43a50eda_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_5292acfcd7479b7376ddd1355d1c394df118887911e722d46370c1630e5c25b3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_5292acfcd7479b7376ddd1355d1c394df118887911e722d46370c1630e5c25b3->enter($__internal_5292acfcd7479b7376ddd1355d1c394df118887911e722d46370c1630e5c25b3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
-        $__internal_dfc87dd3111ca98a604bd153881f2bf929826d7d5c1d8e199b725497e81eb7cd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dfc87dd3111ca98a604bd153881f2bf929826d7d5c1d8e199b725497e81eb7cd->enter($__internal_dfc87dd3111ca98a604bd153881f2bf929826d7d5c1d8e199b725497e81eb7cd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_5360604c51389ee80b4a4241fe1c27260c2cfc8d894d356c1f0a3d76c0002574 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5360604c51389ee80b4a4241fe1c27260c2cfc8d894d356c1f0a3d76c0002574->enter($__internal_5360604c51389ee80b4a4241fe1c27260c2cfc8d894d356c1f0a3d76c0002574_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
         echo "active";
         
-        $__internal_dfc87dd3111ca98a604bd153881f2bf929826d7d5c1d8e199b725497e81eb7cd->leave($__internal_dfc87dd3111ca98a604bd153881f2bf929826d7d5c1d8e199b725497e81eb7cd_prof);
+        $__internal_5360604c51389ee80b4a4241fe1c27260c2cfc8d894d356c1f0a3d76c0002574->leave($__internal_5360604c51389ee80b4a4241fe1c27260c2cfc8d894d356c1f0a3d76c0002574_prof);
 
         
-        $__internal_9ed7813a2070d76f8f944f28a7a9ee5dbe95f29dd87819be88587d5f43a50eda->leave($__internal_9ed7813a2070d76f8f944f28a7a9ee5dbe95f29dd87819be88587d5f43a50eda_prof);
+        $__internal_5292acfcd7479b7376ddd1355d1c394df118887911e722d46370c1630e5c25b3->leave($__internal_5292acfcd7479b7376ddd1355d1c394df118887911e722d46370c1630e5c25b3_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_e8d9f2605024eb1b9c1fb511ef732a60bfa8123a8952ae9d0be31cd5889f020a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e8d9f2605024eb1b9c1fb511ef732a60bfa8123a8952ae9d0be31cd5889f020a->enter($__internal_e8d9f2605024eb1b9c1fb511ef732a60bfa8123a8952ae9d0be31cd5889f020a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_754251ecfdc6f4c4f2cbf28423fc290f0d14d977108c0ba9f255c83af4ca1d07 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_754251ecfdc6f4c4f2cbf28423fc290f0d14d977108c0ba9f255c83af4ca1d07->enter($__internal_754251ecfdc6f4c4f2cbf28423fc290f0d14d977108c0ba9f255c83af4ca1d07_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_b0e398714922e19d3662063349e1669fb6d91e27e9f6deb390675902785036e0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b0e398714922e19d3662063349e1669fb6d91e27e9f6deb390675902785036e0->enter($__internal_b0e398714922e19d3662063349e1669fb6d91e27e9f6deb390675902785036e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5c9c207f83fa8ecbf9a810721d2a4c7243e2ae4aa2309387587c02c24913576d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5c9c207f83fa8ecbf9a810721d2a4c7243e2ae4aa2309387587c02c24913576d->enter($__internal_5c9c207f83fa8ecbf9a810721d2a4c7243e2ae4aa2309387587c02c24913576d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
 
@@ -74,7 +74,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                 <li data-target=\"#main-slider\" data-slide-to=\"2\"></li>
             </ol>
             <div class=\"carousel-inner\">
-                <div class=\"item active\" style=\"background-image: url(../../web/bundles/ptutplatform/images/slider/bg1.jpg)\">
+                <div class=\"item active\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg1.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-12\">
@@ -86,7 +86,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class=\"item\" style=\"background-image: url(../../web/bundles/ptutplatform/images/slider/bg2.jpg)\">
+                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg2.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-12\">
@@ -100,7 +100,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class=\"item\" style=\"background-image: url(../../web/bundles/ptutplatform/images/slider/bg3.jpg)\">
+                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg3.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-6\">
@@ -158,7 +158,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -172,7 +172,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,7 +186,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -204,7 +204,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -218,7 +218,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -232,7 +232,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -248,10 +248,10 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
 
 ";
         
-        $__internal_b0e398714922e19d3662063349e1669fb6d91e27e9f6deb390675902785036e0->leave($__internal_b0e398714922e19d3662063349e1669fb6d91e27e9f6deb390675902785036e0_prof);
+        $__internal_5c9c207f83fa8ecbf9a810721d2a4c7243e2ae4aa2309387587c02c24913576d->leave($__internal_5c9c207f83fa8ecbf9a810721d2a4c7243e2ae4aa2309387587c02c24913576d_prof);
 
         
-        $__internal_e8d9f2605024eb1b9c1fb511ef732a60bfa8123a8952ae9d0be31cd5889f020a->leave($__internal_e8d9f2605024eb1b9c1fb511ef732a60bfa8123a8952ae9d0be31cd5889f020a_prof);
+        $__internal_754251ecfdc6f4c4f2cbf28423fc290f0d14d977108c0ba9f255c83af4ca1d07->leave($__internal_754251ecfdc6f4c4f2cbf28423fc290f0d14d977108c0ba9f255c83af4ca1d07_prof);
 
     }
 
@@ -294,7 +294,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                 <li data-target=\"#main-slider\" data-slide-to=\"2\"></li>
             </ol>
             <div class=\"carousel-inner\">
-                <div class=\"item active\" style=\"background-image: url(../../web/bundles/ptutplatform/images/slider/bg1.jpg)\">
+                <div class=\"item active\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg1.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-12\">
@@ -306,7 +306,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class=\"item\" style=\"background-image: url(../../web/bundles/ptutplatform/images/slider/bg2.jpg)\">
+                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg2.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-12\">
@@ -320,7 +320,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class=\"item\" style=\"background-image: url(../../web/bundles/ptutplatform/images/slider/bg3.jpg)\">
+                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg3.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-6\">
@@ -378,7 +378,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -392,7 +392,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -406,7 +406,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -424,7 +424,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -438,7 +438,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -452,7 +452,7 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
                                                 <p> Meilleur festival de ma vie 
                                                 </p>
                                                 <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"../../web/bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
+                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -466,6 +466,6 @@ class __TwigTemplate_c9a729427a9f6b3c160a5104bcefd6768ddbd438a5efa81c1b04e23886d
         </div>
     </section><!--/#recent-works-->
 
-{%endblock%}", "PTUTPlatformBundle:Platform:home.html.twig", "C:\\wamp64\\www\\ptut\\src\\PTUT\\PlatformBundle/Resources/views/Platform/home.html.twig");
+{%endblock%}", "PTUTPlatformBundle:Platform:home.html.twig", "C:\\wamp64\\www\\PTUT\\src\\PTUT\\PlatformBundle/Resources/views/Platform/home.html.twig");
     }
 }

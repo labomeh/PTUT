@@ -10,7 +10,6 @@ class __TwigTemplate_c3336f942927ff5b60b626a1b133256649cb0b8c8ea5bf6bea5e85de660
         // line 1
         $this->parent = $this->loadTemplate("PTUTPlatformBundle:Platform:layout.html.twig", "PTUTPlatformBundle:Platform:article_creator.html.twig", 1);
         $this->blocks = array(
-            'ongletHome' => array($this, 'block_ongletHome'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -22,56 +21,52 @@ class __TwigTemplate_c3336f942927ff5b60b626a1b133256649cb0b8c8ea5bf6bea5e85de660
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_51f9b1040fad52f1b42530dafcaaa736195d0f2d444b8542608e84bd3765cf6b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_51f9b1040fad52f1b42530dafcaaa736195d0f2d444b8542608e84bd3765cf6b->enter($__internal_51f9b1040fad52f1b42530dafcaaa736195d0f2d444b8542608e84bd3765cf6b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:article_creator.html.twig"));
+        $__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956->enter($__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:article_creator.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_51f9b1040fad52f1b42530dafcaaa736195d0f2d444b8542608e84bd3765cf6b->leave($__internal_51f9b1040fad52f1b42530dafcaaa736195d0f2d444b8542608e84bd3765cf6b_prof);
+        $__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956->leave($__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956_prof);
 
     }
 
     // line 3
-    public function block_ongletHome($context, array $blocks = array())
-    {
-        $__internal_1096cbd9eff83c0d0fd0eca4076249529180e641b7377c4093799fddb81b69ea = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1096cbd9eff83c0d0fd0eca4076249529180e641b7377c4093799fddb81b69ea->enter($__internal_1096cbd9eff83c0d0fd0eca4076249529180e641b7377c4093799fddb81b69ea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
-
-        echo "active";
-        
-        $__internal_1096cbd9eff83c0d0fd0eca4076249529180e641b7377c4093799fddb81b69ea->leave($__internal_1096cbd9eff83c0d0fd0eca4076249529180e641b7377c4093799fddb81b69ea_prof);
-
-    }
-
-    // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_f95334dc9857c34b7868304b98de20f919677119681110dd7ac40ebfffe3a3d7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f95334dc9857c34b7868304b98de20f919677119681110dd7ac40ebfffe3a3d7->enter($__internal_f95334dc9857c34b7868304b98de20f919677119681110dd7ac40ebfffe3a3d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f->enter($__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
 
-<div class=\"row\">
-<form name=\"article_editor\" method=\"post\" class=\"col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-12 col-md-10 col-lg-10\">
-    <div class=\"form-group\">
-        <label for=\"title_editor\">Titre :</label>
-        <input type=\"text\" name=\"titre\"  class=\"form-control\" id=\"title_editor\">
+<section id=\"article_creator\">
+    <div class=\"row\">
+        <form name=\"article_editor\" method=\"post\" action=\"creation/article\" class=\"col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8\">
+            <input type=\"hidden\" class=\"form-control\" name=\"url\" value=\"PTUT/web/article_creator\">
+            <div class=\"form-group\">
+                <label for=\"thumbnail\">Miniature :</label>
+                <input type=\"file\" name=\"miniature\" id=\"thumbnail_editor\">
+            </div>    
+            <div class=\"form-group\">
+                <label for=\"title_editor\">Titre :</label>
+                <input type=\"text\" name=\"titre\"  class=\"form-control\" id=\"title_editor\">
+            </div>
+            <div class=\"form-group\">
+                <label for=\"content_editor\">Contenu :</label>
+                <textarea class=\"form-control\" name=\"content_editor\" id=\"content_editor\"></textarea>
+            </div>
+            <script>
+                CKEDITOR.replace('content_editor');
+            </script>
+            <button type=\"submit\" class=\"btn btn-default\">Créer  l'article</button>
+        </form>
     </div>
-    <div class=\"form-group\">
-        <label for=\"content_editor\">Contenu :</label>
-        <textarea class=\"form-control\" name=\"content_editor\" id=\"content_editor\"></textarea>
-    </div>
-    <script>
-        CKEDITOR.replace('content_editor');
-    </script>
-    <button type=\"submit\" class=\"btn btn-default\">Créer  l'article</button>
-</form></div>
+</section>
 
 
 
 ";
         
-        $__internal_f95334dc9857c34b7868304b98de20f919677119681110dd7ac40ebfffe3a3d7->leave($__internal_f95334dc9857c34b7868304b98de20f919677119681110dd7ac40ebfffe3a3d7_prof);
+        $__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f->leave($__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f_prof);
 
     }
 
@@ -87,7 +82,7 @@ class __TwigTemplate_c3336f942927ff5b60b626a1b133256649cb0b8c8ea5bf6bea5e85de660
 
     public function getDebugInfo()
     {
-        return array (  47 => 5,  35 => 3,  11 => 1,);
+        return array (  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -102,25 +97,31 @@ class __TwigTemplate_c3336f942927ff5b60b626a1b133256649cb0b8c8ea5bf6bea5e85de660
     {
         return new Twig_Source("{% extends \"PTUTPlatformBundle:Platform:layout.html.twig\" %}
 
-{% block ongletHome %}active{%endblock%}
-
 {% block body %} 
 
-<div class=\"row\">
-<form name=\"article_editor\" method=\"post\" class=\"col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-12 col-md-10 col-lg-10\">
-    <div class=\"form-group\">
-        <label for=\"title_editor\">Titre :</label>
-        <input type=\"text\" name=\"titre\"  class=\"form-control\" id=\"title_editor\">
+<section id=\"article_creator\">
+    <div class=\"row\">
+        <form name=\"article_editor\" method=\"post\" action=\"creation/article\" class=\"col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8\">
+            <input type=\"hidden\" class=\"form-control\" name=\"url\" value=\"PTUT/web/article_creator\">
+            <div class=\"form-group\">
+                <label for=\"thumbnail\">Miniature :</label>
+                <input type=\"file\" name=\"miniature\" id=\"thumbnail_editor\">
+            </div>    
+            <div class=\"form-group\">
+                <label for=\"title_editor\">Titre :</label>
+                <input type=\"text\" name=\"titre\"  class=\"form-control\" id=\"title_editor\">
+            </div>
+            <div class=\"form-group\">
+                <label for=\"content_editor\">Contenu :</label>
+                <textarea class=\"form-control\" name=\"content_editor\" id=\"content_editor\"></textarea>
+            </div>
+            <script>
+                CKEDITOR.replace('content_editor');
+            </script>
+            <button type=\"submit\" class=\"btn btn-default\">Créer  l'article</button>
+        </form>
     </div>
-    <div class=\"form-group\">
-        <label for=\"content_editor\">Contenu :</label>
-        <textarea class=\"form-control\" name=\"content_editor\" id=\"content_editor\"></textarea>
-    </div>
-    <script>
-        CKEDITOR.replace('content_editor');
-    </script>
-    <button type=\"submit\" class=\"btn btn-default\">Créer  l'article</button>
-</form></div>
+</section>
 
 
 

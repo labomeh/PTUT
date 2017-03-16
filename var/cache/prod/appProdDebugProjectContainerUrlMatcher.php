@@ -37,6 +37,11 @@ class appProdDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'ptut_platform_view')), array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::viewAction',));
         }
 
+        // ptut_platform_creation_article
+        if ($pathinfo === '/creation/article') {
+            return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::create_pageAction',  '_route' => 'ptut_platform_creation_article',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

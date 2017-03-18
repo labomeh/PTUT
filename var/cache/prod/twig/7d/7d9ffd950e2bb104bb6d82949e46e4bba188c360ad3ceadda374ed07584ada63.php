@@ -21,27 +21,26 @@ class __TwigTemplate_c3336f942927ff5b60b626a1b133256649cb0b8c8ea5bf6bea5e85de660
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956->enter($__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:article_creator.html.twig"));
+        $__internal_cf8f9819dacf8f3739d095f32a6cc1e6602765f1990776f58a66a5413f91ae51 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cf8f9819dacf8f3739d095f32a6cc1e6602765f1990776f58a66a5413f91ae51->enter($__internal_cf8f9819dacf8f3739d095f32a6cc1e6602765f1990776f58a66a5413f91ae51_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:article_creator.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956->leave($__internal_7da89c7355d55b3d0282ab667d9b31bea9c9740da712f904ad7a136ed3133956_prof);
+        $__internal_cf8f9819dacf8f3739d095f32a6cc1e6602765f1990776f58a66a5413f91ae51->leave($__internal_cf8f9819dacf8f3739d095f32a6cc1e6602765f1990776f58a66a5413f91ae51_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f->enter($__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_273fed614f44db04691df7f3deb4bebfeec6353106048bad454b3ad438941622 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_273fed614f44db04691df7f3deb4bebfeec6353106048bad454b3ad438941622->enter($__internal_273fed614f44db04691df7f3deb4bebfeec6353106048bad454b3ad438941622_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
 
 <section id=\"article_creator\">
     <div class=\"row\">
-        <form name=\"article_editor\" method=\"post\" action=\"creation/article\" class=\"col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8\">
-            <input type=\"hidden\" class=\"form-control\" name=\"url\" value=\"PTUT/web/article_creator\">
+        <form name=\"article_editor\" method=\"post\" action=\"\" class=\"col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8\">
             <div class=\"form-group\">
                 <label for=\"thumbnail\">Miniature :</label>
                 <input type=\"file\" name=\"miniature\" id=\"thumbnail_editor\">
@@ -66,7 +65,7 @@ class __TwigTemplate_c3336f942927ff5b60b626a1b133256649cb0b8c8ea5bf6bea5e85de660
 
 ";
         
-        $__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f->leave($__internal_02da7e9442e01350bfa54b91e2f2c6813c76ad689cd6fb0143bdda22d55f5a9f_prof);
+        $__internal_273fed614f44db04691df7f3deb4bebfeec6353106048bad454b3ad438941622->leave($__internal_273fed614f44db04691df7f3deb4bebfeec6353106048bad454b3ad438941622_prof);
 
     }
 
@@ -101,8 +100,7 @@ class __TwigTemplate_c3336f942927ff5b60b626a1b133256649cb0b8c8ea5bf6bea5e85de660
 
 <section id=\"article_creator\">
     <div class=\"row\">
-        <form name=\"article_editor\" method=\"post\" action=\"creation/article\" class=\"col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8\">
-            <input type=\"hidden\" class=\"form-control\" name=\"url\" value=\"PTUT/web/article_creator\">
+        <form name=\"article_editor\" method=\"post\" action=\"\" class=\"col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8\">
             <div class=\"form-group\">
                 <label for=\"thumbnail\">Miniature :</label>
                 <input type=\"file\" name=\"miniature\" id=\"thumbnail_editor\">

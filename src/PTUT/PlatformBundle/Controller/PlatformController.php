@@ -16,7 +16,7 @@ class PlatformController extends Controller
     public function article_creatorAction()
     {
         if(isset($_POST['content_editor'])){
-            $file=fopen('../src/PTUT/PlatformBundle/Resources/views/Platform/article_1.html.twig','w');
+            $file=fopen('../src/PTUT/PlatformBundle/Resources/views/Platform/articles/article_1.html.twig','w');
             fwrite($file,'{% extends "PTUTPlatformBundle:Platform:layout.html.twig" %}');
             fwrite($file,'{% block body %}');
             fwrite($file,$_POST['content_editor']);

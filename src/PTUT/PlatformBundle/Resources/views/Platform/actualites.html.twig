@@ -1,0 +1,35 @@
+{% extends "PTUTPlatformBundle:Platform:layout.html.twig" %}
+
+{% block ongletEditions %}active{%endblock%}
+
+{% block body %} 
+    <section class="container">
+    <h1>Articles</h1>
+        <hr>
+        {% for i in 0..10 %}
+            {% if i <= taille-1 %}
+                <div class="sol-sm-offset-1 col-sm-10 sol-sm-offset-1">
+                    {% if i != 0 %}
+                        <hr>
+                    {% endif %}
+                    <h2> {{ articles[i].titre }} </h2>
+                    <p> {{ articles[i].presentation }}</p>
+                    <button class="btn btn-danger pull-right">Voir plus</button>
+                </div>
+            {% endif %}
+        
+        {% endfor %}
+    <div class="btn-group col-sm-12">
+        <hr>
+    {% if taille/2 >= 2 %}
+            
+            <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
+            <p class="btn btn-danger">666</p>
+            <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
+    {% elseif taille/2 >= 4%}
+            <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
+            <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
+    {% endif %}
+    </div>
+    </section>
+{%endblock%}

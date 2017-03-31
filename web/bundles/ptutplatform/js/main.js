@@ -3,7 +3,7 @@ jQuery(function($) {
 	//#main-slider
 	$(function(){
 		$('#main-slider.carousel').carousel({
-			interval: 8000
+			interval: 2000
 		});
 	});
 
@@ -19,6 +19,7 @@ jQuery(function($) {
 
 	//portfolio
 	$(window).load(function(){
+        $('#main-slider').show();
 		$portfolio_selectors = $('.portfolio-filter >li>a');
 		if($portfolio_selectors!='undefined'){
 			$portfolio = $('.portfolio-items');
@@ -58,4 +59,22 @@ jQuery(function($) {
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
 	});	
+    
+    $(window).resize(function(){
+        if($(window).width() <= 600)
+            {
+                $('#main-slider').hide();
+            }else if($(window).width() >= 650)
+            {
+                $('#main-slider').show();  
+            }
+    });
+    
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= 310)
+            {
+                $('#articleD').animate({opacity:'1'},1500);
+                $('#articleG').animate({opacity:'1'},1500);
+            }
+    })
 });

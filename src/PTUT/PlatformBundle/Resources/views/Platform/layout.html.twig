@@ -7,13 +7,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    {% block include %} {% endblock %}
     <title>PTUT</title>
-    <link href="bundles/ptutplatform/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bundles/ptutplatform/css/font-awesome.min.css" rel="stylesheet">
-    <link href="bundles/ptutplatform/css/prettyPhoto.css" rel="stylesheet">
-    <link href="bundles/ptutplatform/css/animate.css" rel="stylesheet">
-    <link href="bundles/ptutplatform/css/main.css" rel="stylesheet">
+    <link href="{{ asset('bundles/ptutplatform/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/ptutplatform/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/ptutplatform/css/prettyPhoto.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/ptutplatform/css/animate.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/ptutplatform/css/main.css')}}" rel="stylesheet">
+    {% block include %} {% endblock %}
 
     <!--[if lt IE 9]>
     <script src="../../web/bundles/ptutplatform/js/html5shiv.js"></script>
@@ -35,13 +35,14 @@
                 <span class="icon-bar"></span>
               </button>
                 
-              <a class="navbar-brand" href="#">PTUT S2</a>
+              <a class="navbar-brand" href="home">PTUT S2</a>
                 
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li class="{% block ongletHome %} {% endblock %}"><a href="#">Home</a></li>
-                <li class="{% block ongletEditions %} {% endblock %}"><a href="#Editions">Editions</a></li>
+                <li class="{% block ongletHome %} {% endblock %}"><a href="{{path('ptut_platform_view', {'id': 'home'})}}">Home</a></li>
+                <li class="dropdown {% block ongletEditions %} {% endblock %}"><a href="{{path('ptut_platform_view_id', {'id': 1})}}">Actualités</a>
+                </li>
                 <li class="dropdown {% block ongletCompte %} {% endblock %}"><a href="#" class="dropdown-toggle" data-toggle = "dropdown" role="button">Mon compte<span class="icon-angle-down"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Se connecter</a></li>
@@ -60,22 +61,22 @@
     {% endblock %}
         
     <footer id="footer" class="midnight-blue">
-        <div class="col-sm-6">
-        <span class="text-muted">PTUT Manon Rajaonarivelo, Sunny Nguyen, Simon Pasquereau, Mehdi Labourdette, Antonin Guyot - IUT Informatique Lyon 1</span>
+        <div class="col-sm-7"><span class="text-muted">PTUT Manon Rajaonarivelo, Sunny Nguyen, Simon Pasquereau, Mehdi Labourdette, Antonin Guyot - IUT Informatique Lyon 1</span>
         </div>
-        <div class="col-sm-6">
-                    <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
-                    </ul>
-                </div>
-    </footer> 
-    <script src="bundles/ptutplatform/js/jquery.js"></script>
-    <script src="bundles/ptutplatform/js/bootstrap.min.js"></script>
-    <script src="bundles/ptutplatform/js/jquery.prettyPhoto.js"></script>
-    <script src="bundles/ptutplatform/js/main.js"></script>
+        <div class="col-sm-5">
+            <ul class="pull-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
+            </ul>
+        </div>
+    </footer>
+
+    <script src="{{ asset('bundles/ptutplatform/js/jquery.js')}}"></script>
+    <script src="{{ asset('bundles/ptutplatform/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('bundles/ptutplatform/js/jquery.prettyPhoto.js')}}"></script>
+    <script src="{{ asset('bundles/ptutplatform/js/main.js')}}"></script>
 </body>
 </html>

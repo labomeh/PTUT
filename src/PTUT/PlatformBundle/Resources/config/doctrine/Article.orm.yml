@@ -1,0 +1,23 @@
+PTUT\PlatformBundle\Entity\Article:
+    type: entity
+    table: null
+    repositoryClass: PTUT\PlatformBundle\Repository\ArticleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+        presentation:
+            type: string
+            length: '3000'
+        date:
+            type: date
+        auteur:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

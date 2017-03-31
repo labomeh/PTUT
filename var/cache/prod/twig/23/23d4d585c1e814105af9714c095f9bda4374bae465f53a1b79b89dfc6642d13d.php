@@ -22,32 +22,32 @@ class __TwigTemplate_61589f4adb9ddfc2932e9e9371a01b0811d14ca9b142adaec62d12a866d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fdcbe169a86c03c786a346518c82061a471e86e4375aee1ba8f642df273e2d63 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fdcbe169a86c03c786a346518c82061a471e86e4375aee1ba8f642df273e2d63->enter($__internal_fdcbe169a86c03c786a346518c82061a471e86e4375aee1ba8f642df273e2d63_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:home.html.twig"));
+        $__internal_51e33a2716dd2dbb9766e6e7ed8d79198f6737b19f7612d28693f55cca729e3e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_51e33a2716dd2dbb9766e6e7ed8d79198f6737b19f7612d28693f55cca729e3e->enter($__internal_51e33a2716dd2dbb9766e6e7ed8d79198f6737b19f7612d28693f55cca729e3e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:home.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_fdcbe169a86c03c786a346518c82061a471e86e4375aee1ba8f642df273e2d63->leave($__internal_fdcbe169a86c03c786a346518c82061a471e86e4375aee1ba8f642df273e2d63_prof);
+        $__internal_51e33a2716dd2dbb9766e6e7ed8d79198f6737b19f7612d28693f55cca729e3e->leave($__internal_51e33a2716dd2dbb9766e6e7ed8d79198f6737b19f7612d28693f55cca729e3e_prof);
 
     }
 
     // line 3
     public function block_ongletHome($context, array $blocks = array())
     {
-        $__internal_9d513c134ca043a0a0766efb02063297b0af6a4e2d80396d1aa4e6f6fb97fde7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9d513c134ca043a0a0766efb02063297b0af6a4e2d80396d1aa4e6f6fb97fde7->enter($__internal_9d513c134ca043a0a0766efb02063297b0af6a4e2d80396d1aa4e6f6fb97fde7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_5700d70c6955cee5d5356857359756e465317ccb587338aa4dd300640c4d35f3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5700d70c6955cee5d5356857359756e465317ccb587338aa4dd300640c4d35f3->enter($__internal_5700d70c6955cee5d5356857359756e465317ccb587338aa4dd300640c4d35f3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
         echo "active";
         
-        $__internal_9d513c134ca043a0a0766efb02063297b0af6a4e2d80396d1aa4e6f6fb97fde7->leave($__internal_9d513c134ca043a0a0766efb02063297b0af6a4e2d80396d1aa4e6f6fb97fde7_prof);
+        $__internal_5700d70c6955cee5d5356857359756e465317ccb587338aa4dd300640c4d35f3->leave($__internal_5700d70c6955cee5d5356857359756e465317ccb587338aa4dd300640c4d35f3_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_87d547b0eda84789ed934095b78a60d97bc90f110ef324bb0609c8528b79088f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_87d547b0eda84789ed934095b78a60d97bc90f110ef324bb0609c8528b79088f->enter($__internal_87d547b0eda84789ed934095b78a60d97bc90f110ef324bb0609c8528b79088f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4030270606440ba3ab94f32478cc43f4850704321924fdfcfafa88baafa8e81f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4030270606440ba3ab94f32478cc43f4850704321924fdfcfafa88baafa8e81f->enter($__internal_4030270606440ba3ab94f32478cc43f4850704321924fdfcfafa88baafa8e81f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
 
@@ -117,123 +117,56 @@ class __TwigTemplate_61589f4adb9ddfc2932e9e9371a01b0811d14ca9b142adaec62d12a866d
         </a>
     </section>
 
-    <section id=\"recent-works\">
+    <section id=\"testimonial\" class=\"pumkin\">
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-md-3\">
-                    <h3>Dernières actualités</h3>
-                    <p>Derniers commentaires sur les festivals à la mode</p>
-                    <div class=\"btn-group\">
-                        <a class=\"btn btn-danger\" href=\"#scroller\" data-slide=\"prev\"><i class=\"icon-angle-left\"></i></a>
-                        <a class=\"btn btn-danger\" href=\"#scroller\" data-slide=\"next\"><i class=\"icon-angle-right\"></i></a>
+                <div class=\"col-lg-12\">
+                    <div class=\"center\">
+                        <h2>Derniers articles</h2>
                     </div>
-                    <p class=\"gap\"></p>
-                </div>
-                <div class=\"col-md-9\">
-                    <div id=\"scroller\" class=\"carousel slide\">
-                        <div class=\"carousel-inner\">
-                            <div class=\"item active\">
-                                <div class=\"row\">
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                            
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                           
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--/.row-->
-                            </div><!--/.item-->
-                            <div class=\"item\">
-                                <div class=\"row\">
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                        
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--/.item-->
+                    <div class=\"gap\"></div>
+                    <div class=\"row\">
+                        <div id=\"articleG\" class=\"col-md-6\" style=\"opacity:0\">
+                            <blockquote>
+                                <p> ";
+        // line 84
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["articles"]) ? $context["articles"] : $this->getContext($context, "articles")), 0, array(), "array"), "titre", array()), "html", null, true);
+        echo " </p>
+                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
+                            </blockquote>
+                            <blockquote>
+                                <p>";
+        // line 88
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["articles"]) ? $context["articles"] : $this->getContext($context, "articles")), 1, array(), "array"), "titre", array()), "html", null, true);
+        echo "</p>
+                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
+                            </blockquote>
+                        </div>
+                        <div id=\"articleD\" class=\"col-md-6\" style=\"opacity:0\">
+                            <blockquote>
+                                <p>";
+        // line 94
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["articles"]) ? $context["articles"] : $this->getContext($context, "articles")), 2, array(), "array"), "titre", array()), "html", null, true);
+        echo "</p>
+                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
+                            </blockquote>
+                            <blockquote>
+                                <p>";
+        // line 98
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["articles"]) ? $context["articles"] : $this->getContext($context, "articles")), 3, array(), "array"), "titre", array()), "html", null, true);
+        echo "</p>
+                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
-            </div><!--/.row-->
+            </div>
         </div>
-    </section><!--/#recent-works-->
+    </section>
 
 ";
         
-        $__internal_87d547b0eda84789ed934095b78a60d97bc90f110ef324bb0609c8528b79088f->leave($__internal_87d547b0eda84789ed934095b78a60d97bc90f110ef324bb0609c8528b79088f_prof);
+        $__internal_4030270606440ba3ab94f32478cc43f4850704321924fdfcfafa88baafa8e81f->leave($__internal_4030270606440ba3ab94f32478cc43f4850704321924fdfcfafa88baafa8e81f_prof);
 
     }
 
@@ -249,7 +182,7 @@ class __TwigTemplate_61589f4adb9ddfc2932e9e9371a01b0811d14ca9b142adaec62d12a866d
 
     public function getDebugInfo()
     {
-        return array (  47 => 5,  35 => 3,  11 => 1,);
+        return array (  156 => 98,  149 => 94,  140 => 88,  133 => 84,  47 => 5,  35 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -334,119 +267,40 @@ class __TwigTemplate_61589f4adb9ddfc2932e9e9371a01b0811d14ca9b142adaec62d12a866d
         </a>
     </section>
 
-    <section id=\"recent-works\">
+    <section id=\"testimonial\" class=\"pumkin\">
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-md-3\">
-                    <h3>Dernières actualités</h3>
-                    <p>Derniers commentaires sur les festivals à la mode</p>
-                    <div class=\"btn-group\">
-                        <a class=\"btn btn-danger\" href=\"#scroller\" data-slide=\"prev\"><i class=\"icon-angle-left\"></i></a>
-                        <a class=\"btn btn-danger\" href=\"#scroller\" data-slide=\"next\"><i class=\"icon-angle-right\"></i></a>
+                <div class=\"col-lg-12\">
+                    <div class=\"center\">
+                        <h2>Derniers articles</h2>
                     </div>
-                    <p class=\"gap\"></p>
-                </div>
-                <div class=\"col-md-9\">
-                    <div id=\"scroller\" class=\"carousel slide\">
-                        <div class=\"carousel-inner\">
-                            <div class=\"item active\">
-                                <div class=\"row\">
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                            
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                           
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--/.row-->
-                            </div><!--/.item-->
-                            <div class=\"item\">
-                                <div class=\"row\">
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                        
-                                    <div class=\"col-xs-4\">
-                                        <div class=\"portfolio-item\">
-                                            <div class=\"item-inner\">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <p> Meilleur festival de ma vie 
-                                                </p>
-                                                <div class=\"overlay\">
-                                                    <a class=\"preview btn btn-danger\" title=\"Malesuada fames ac turpis egestas\" href=\"bundles/ptutplatform/images/portfolio/full/item1.jpg\" rel=\"prettyPhoto\"><i class=\"icon-eye-open\"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--/.item-->
+                    <div class=\"gap\"></div>
+                    <div class=\"row\">
+                        <div id=\"articleG\" class=\"col-md-6\" style=\"opacity:0\">
+                            <blockquote>
+                                <p> {{ articles[0].titre }} </p>
+                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
+                            </blockquote>
+                            <blockquote>
+                                <p>{{ articles[1].titre }}</p>
+                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
+                            </blockquote>
+                        </div>
+                        <div id=\"articleD\" class=\"col-md-6\" style=\"opacity:0\">
+                            <blockquote>
+                                <p>{{ articles[2].titre }}</p>
+                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
+                            </blockquote>
+                            <blockquote>
+                                <p>{{ articles[3].titre }}</p>
+                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
-            </div><!--/.row-->
+            </div>
         </div>
-    </section><!--/#recent-works-->
+    </section>
 
 {%endblock%}", "PTUTPlatformBundle:Platform:home.html.twig", "C:\\wamp64\\www\\ptut\\src\\PTUT\\PlatformBundle/Resources/views/Platform/home.html.twig");
     }

@@ -1,3 +1,11 @@
 ptut_platform_homepage:
     path:     /home
     defaults: { _controller: PTUTPlatformBundle:Platform:index }
+    
+ptut_platform_view:
+    path:     /{id}
+    defaults: { _controller: PTUTPlatformBundle:Platform:view }
+    
+ptut_platform_view_id:
+    path:     /actualites/{id}
+    defaults: { _controller: PTUTPlatformBundle:Platform:viewid }

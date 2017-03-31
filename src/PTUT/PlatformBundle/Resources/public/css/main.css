@@ -1087,3 +1087,9 @@ ul.faq li > div h3 {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+
+@media(min-width:766px){
+    #main-slider{
+        display:none;
+    }
+}

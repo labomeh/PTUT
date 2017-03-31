@@ -1,0 +1,22 @@
+PTUT\PlatformBundle\Entity\Commentaire:
+    type: entity
+    table: null
+    repositoryClass: PTUT\PlatformBundle\Repository\CommentaireRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        auteur:
+            type: string
+            length: 255
+        contenu:
+            type: string
+            length: '600'
+        reponse:
+            type: integer
+        date:
+            type: time
+    lifecycleCallbacks: {  }

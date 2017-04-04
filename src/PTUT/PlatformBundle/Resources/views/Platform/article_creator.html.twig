@@ -1,0 +1,46 @@
+{% extends "PTUTPlatformBundle:Platform:layout.html.twig" %}
+
+{% block body %} 
+
+<section id="article_creator">
+    <div class="row">
+        <form name="article_editor" method="post" action="" class="col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8">
+            <div class="form-group">
+                <label for="thumbnail">Miniature :</label>
+                <input type="file" name="miniature" id="thumbnail_editor">
+            </div>    
+            <div class="form-group">
+                <label for="title_editor">Titre :</label>
+                <input type="text" name="titre"  class="form-control" id="title_editor">
+            </div>
+            <div class="form-group">
+                <label for="content_editor">Contenu :</label>
+                <textarea class="form-control" name="content_editor" id="content_editor"></textarea>
+            </div>
+            <script>
+                CKEDITOR.replace('content_editor',{
+                    toolbar : [
+                        { name: 'document', items: ['Templates' ] },
+                        { name: 'clipboard', items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
+                        { name: 'editing', items: [ 'Find', 'Replace', '-', 'SelectAll', '-', 'Scayt' ] },
+                        { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'CopyFormatting', 'RemoveFormat' ] },
+                        { name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language' ] },
+                        { name: 'links', items: [ 'Link', 'Unlink', 'Anchor' ] },
+                        { name: 'insert', items: [ 'Image', 'EmbedSemantic', 'Flash', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak', 'Iframe' ] },
+                        { name: 'styles', items: [ 'Styles', 'Format', 'Font', 'FontSize' ] },
+                        { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
+                        { name: 'tools', items: [ 'Maximize', 'ShowBlocks' ] },
+                        { name: 'about', items: [ 'About' ] }
+                    ],
+                    templates_files:[ "{{ asset('bundles/ptutplatform/ckeditor/plugins/templates/templates/article.js') }}" ]
+                });
+            </script>
+            <button type="submit" class="btn btn-default">Créer  l'article</button>
+        </form>
+        
+    </div>
+</section>
+
+
+
+{%endblock%}

@@ -1,3 +1,11 @@
 ptut_platform_homepage:
     path:     /home
     defaults: { _controller: PTUTPlatformBundle:Platform:index }
+    
+ptut_platform_article:
+    path:     /article/{id}
+    defaults: { _controller: PTUTPlatformBundle:Platform:view_article }
+
+ptut_platform_article_creator:
+    path:     /creer/article
+    defaults: { _controller: PTUTPlatformBundle:Platform:article_creator }

@@ -110,6 +110,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::indexAction',  '_route' => 'ptut_platform_homepage',);
         }
 
+        // ptut_platform_article
+        if (0 === strpos($pathinfo, '/article') && preg_match('#^/article/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ptut_platform_article')), array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::view_articleAction',));
+        }
+
+        // ptut_platform_article_creator
+        if ($pathinfo === '/creer/article') {
+            return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::article_creatorAction',  '_route' => 'ptut_platform_article_creator',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

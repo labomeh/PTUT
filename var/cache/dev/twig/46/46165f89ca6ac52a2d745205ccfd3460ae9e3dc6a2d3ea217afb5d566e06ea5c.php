@@ -15,11 +15,11 @@ class __TwigTemplate_f8559f02ac0dec03c3400960ff6eff75dab8bb424ccff0548f6d0eee139
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_02a91d531e1db072232a2009424a14cd736d68d3010b2ff4e52d36dc8f1e4f0c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_02a91d531e1db072232a2009424a14cd736d68d3010b2ff4e52d36dc8f1e4f0c->enter($__internal_02a91d531e1db072232a2009424a14cd736d68d3010b2ff4e52d36dc8f1e4f0c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_collapsed.html.php"));
+        $__internal_593d22caf4b9ba190c12561c5615cf4dde33cce02fe9457aa022e6d234d20d0b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_593d22caf4b9ba190c12561c5615cf4dde33cce02fe9457aa022e6d234d20d0b->enter($__internal_593d22caf4b9ba190c12561c5615cf4dde33cce02fe9457aa022e6d234d20d0b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_collapsed.html.php"));
 
-        $__internal_a1be92b1b3515aa154dd82f4501d4508c7bbf17ddfdadb9e2568828e74d449b6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a1be92b1b3515aa154dd82f4501d4508c7bbf17ddfdadb9e2568828e74d449b6->enter($__internal_a1be92b1b3515aa154dd82f4501d4508c7bbf17ddfdadb9e2568828e74d449b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_collapsed.html.php"));
+        $__internal_e27f7be1431b9bdbc8441008a3596bc0284c1129e8fcb7791ce9beead44ebd88 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e27f7be1431b9bdbc8441008a3596bc0284c1129e8fcb7791ce9beead44ebd88->enter($__internal_e27f7be1431b9bdbc8441008a3596bc0284c1129e8fcb7791ce9beead44ebd88_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_collapsed.html.php"));
 
         // line 1
         echo "<select
@@ -42,10 +42,10 @@ class __TwigTemplate_f8559f02ac0dec03c3400960ff6eff75dab8bb424ccff0548f6d0eee139
 </select>
 ";
         
-        $__internal_02a91d531e1db072232a2009424a14cd736d68d3010b2ff4e52d36dc8f1e4f0c->leave($__internal_02a91d531e1db072232a2009424a14cd736d68d3010b2ff4e52d36dc8f1e4f0c_prof);
+        $__internal_593d22caf4b9ba190c12561c5615cf4dde33cce02fe9457aa022e6d234d20d0b->leave($__internal_593d22caf4b9ba190c12561c5615cf4dde33cce02fe9457aa022e6d234d20d0b_prof);
 
         
-        $__internal_a1be92b1b3515aa154dd82f4501d4508c7bbf17ddfdadb9e2568828e74d449b6->leave($__internal_a1be92b1b3515aa154dd82f4501d4508c7bbf17ddfdadb9e2568828e74d449b6_prof);
+        $__internal_e27f7be1431b9bdbc8441008a3596bc0284c1129e8fcb7791ce9beead44ebd88->leave($__internal_e27f7be1431b9bdbc8441008a3596bc0284c1129e8fcb7791ce9beead44ebd88_prof);
 
     }
 

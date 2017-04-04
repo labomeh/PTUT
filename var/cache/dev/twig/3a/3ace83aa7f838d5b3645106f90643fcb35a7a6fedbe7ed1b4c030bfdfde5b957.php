@@ -10,7 +10,6 @@ class __TwigTemplate_0052b6f7e7124b016163d6da1ecc9e21748d3dec851d14a9aadf98351e6
         // line 1
         $this->parent = $this->loadTemplate("PTUTPlatformBundle:Platform:layout.html.twig", "PTUTPlatformBundle:Platform:article_creator.html.twig", 1);
         $this->blocks = array(
-            'ongletHome' => array($this, 'block_ongletHome'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -22,70 +21,80 @@ class __TwigTemplate_0052b6f7e7124b016163d6da1ecc9e21748d3dec851d14a9aadf98351e6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7dc56adc482f59f481630720b8c0c21ab586740e287bb63f76f1c473769bc625 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7dc56adc482f59f481630720b8c0c21ab586740e287bb63f76f1c473769bc625->enter($__internal_7dc56adc482f59f481630720b8c0c21ab586740e287bb63f76f1c473769bc625_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:article_creator.html.twig"));
+        $__internal_9b58827ee736c5dee6d0695052496a5b9d87d0381af52e17e2f19dee6ae1f9a8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_9b58827ee736c5dee6d0695052496a5b9d87d0381af52e17e2f19dee6ae1f9a8->enter($__internal_9b58827ee736c5dee6d0695052496a5b9d87d0381af52e17e2f19dee6ae1f9a8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:article_creator.html.twig"));
 
-        $__internal_9e12a9aaae1171914f15aeab1b78f96e1b0ebd2b8ab5b3a3e4d330844408586a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9e12a9aaae1171914f15aeab1b78f96e1b0ebd2b8ab5b3a3e4d330844408586a->enter($__internal_9e12a9aaae1171914f15aeab1b78f96e1b0ebd2b8ab5b3a3e4d330844408586a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:article_creator.html.twig"));
+        $__internal_bfabab420f9bf472ee411d7e83b7b32132b855d7c348f970734c9ced383b8965 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bfabab420f9bf472ee411d7e83b7b32132b855d7c348f970734c9ced383b8965->enter($__internal_bfabab420f9bf472ee411d7e83b7b32132b855d7c348f970734c9ced383b8965_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:article_creator.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7dc56adc482f59f481630720b8c0c21ab586740e287bb63f76f1c473769bc625->leave($__internal_7dc56adc482f59f481630720b8c0c21ab586740e287bb63f76f1c473769bc625_prof);
+        $__internal_9b58827ee736c5dee6d0695052496a5b9d87d0381af52e17e2f19dee6ae1f9a8->leave($__internal_9b58827ee736c5dee6d0695052496a5b9d87d0381af52e17e2f19dee6ae1f9a8_prof);
 
         
-        $__internal_9e12a9aaae1171914f15aeab1b78f96e1b0ebd2b8ab5b3a3e4d330844408586a->leave($__internal_9e12a9aaae1171914f15aeab1b78f96e1b0ebd2b8ab5b3a3e4d330844408586a_prof);
+        $__internal_bfabab420f9bf472ee411d7e83b7b32132b855d7c348f970734c9ced383b8965->leave($__internal_bfabab420f9bf472ee411d7e83b7b32132b855d7c348f970734c9ced383b8965_prof);
 
     }
 
     // line 3
-    public function block_ongletHome($context, array $blocks = array())
-    {
-        $__internal_a94ac9a3f98d940b6b946c993e361cd16f6f95d6b001752a4a26903ac85f78dd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a94ac9a3f98d940b6b946c993e361cd16f6f95d6b001752a4a26903ac85f78dd->enter($__internal_a94ac9a3f98d940b6b946c993e361cd16f6f95d6b001752a4a26903ac85f78dd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
-
-        $__internal_bc92e6693d9120eb2fd581168a3806989b098086c7718076719a4e596f3575ee = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bc92e6693d9120eb2fd581168a3806989b098086c7718076719a4e596f3575ee->enter($__internal_bc92e6693d9120eb2fd581168a3806989b098086c7718076719a4e596f3575ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
-
-        echo "active";
-        
-        $__internal_bc92e6693d9120eb2fd581168a3806989b098086c7718076719a4e596f3575ee->leave($__internal_bc92e6693d9120eb2fd581168a3806989b098086c7718076719a4e596f3575ee_prof);
-
-        
-        $__internal_a94ac9a3f98d940b6b946c993e361cd16f6f95d6b001752a4a26903ac85f78dd->leave($__internal_a94ac9a3f98d940b6b946c993e361cd16f6f95d6b001752a4a26903ac85f78dd_prof);
-
-    }
-
-    // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_e0584d87bb9c78966849d5ae3d1849c2f0e10c7d030a4b40e24fb397f0b74e1f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e0584d87bb9c78966849d5ae3d1849c2f0e10c7d030a4b40e24fb397f0b74e1f->enter($__internal_e0584d87bb9c78966849d5ae3d1849c2f0e10c7d030a4b40e24fb397f0b74e1f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_b851554bcab690134a107bb72956c4215ced392ea23e5a8cfe9f590ebea31220 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b851554bcab690134a107bb72956c4215ced392ea23e5a8cfe9f590ebea31220->enter($__internal_b851554bcab690134a107bb72956c4215ced392ea23e5a8cfe9f590ebea31220_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_b3c0f9d836188c96473b922637f5c9b762ed6e9e74261bb2ec29d5fdfb9f73e7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b3c0f9d836188c96473b922637f5c9b762ed6e9e74261bb2ec29d5fdfb9f73e7->enter($__internal_b3c0f9d836188c96473b922637f5c9b762ed6e9e74261bb2ec29d5fdfb9f73e7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_94b584e878181568e92b575ecc802b290a686061f9ff1a07caa7126c4310a706 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_94b584e878181568e92b575ecc802b290a686061f9ff1a07caa7126c4310a706->enter($__internal_94b584e878181568e92b575ecc802b290a686061f9ff1a07caa7126c4310a706_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
 
-<div class=\"row\">
-<div name=\"article_editor\" class=\"form-group col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-12 col-md-10 col-lg-10\">
-    <label for=\"title_editor\">Titre :</label>
-    <input type=\"text\" name=\"titre\"  class=\"form-control\" id=\"title_editor\">
-    <label for=\"content_editor\">Contenu :</label>
-    <textarea class=\"form-control\" name=\"content_editor\" id=\"content_editor\">
-    </textarea>
-    <script>
-        CKEDITOR.replace('content_editor');
-    </script>
-</div></div>
+<section id=\"article_creator\">
+    <div class=\"row\">
+        <form name=\"article_editor\" method=\"post\" action=\"\" class=\"col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8\">
+            <div class=\"form-group\">
+                <label for=\"thumbnail\">Miniature :</label>
+                <input type=\"file\" name=\"miniature\" id=\"thumbnail_editor\">
+            </div>    
+            <div class=\"form-group\">
+                <label for=\"title_editor\">Titre :</label>
+                <input type=\"text\" name=\"titre\"  class=\"form-control\" id=\"title_editor\">
+            </div>
+            <div class=\"form-group\">
+                <label for=\"content_editor\">Contenu :</label>
+                <textarea class=\"form-control\" name=\"content_editor\" id=\"content_editor\"></textarea>
+            </div>
+            <script>
+                CKEDITOR.config.toolbarGroups=[
+                        { name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+                        { name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
+                        { name: 'editing', groups: [ 'find', 'selection', 'spellchecker', 'editing' ] },
+                        { name: 'forms', groups: [ 'forms' ] },
+                        '/',
+                        { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+                        { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi', 'paragraph' ] },
+                        { name: 'links', groups: [ 'links' ] },
+                        { name: 'insert', groups: [ 'insert' ] },
+                        '/',
+                        { name: 'styles', groups: [ 'styles' ] },
+                        { name: 'colors', groups: [ 'colors' ] },
+                        { name: 'tools', groups: [ 'tools' ] },
+                        { name: 'others', groups: [ 'others' ] },
+                        { name: 'about', groups: [ 'about' ] }
+                    ];
+                CKEDITOR.replace('content_editor');
+            </script>
+            <button type=\"submit\" class=\"btn btn-default\">Créer  l'article</button>
+        </form>
+    </div>
+</section>
 
 
 
 ";
         
-        $__internal_b3c0f9d836188c96473b922637f5c9b762ed6e9e74261bb2ec29d5fdfb9f73e7->leave($__internal_b3c0f9d836188c96473b922637f5c9b762ed6e9e74261bb2ec29d5fdfb9f73e7_prof);
+        $__internal_94b584e878181568e92b575ecc802b290a686061f9ff1a07caa7126c4310a706->leave($__internal_94b584e878181568e92b575ecc802b290a686061f9ff1a07caa7126c4310a706_prof);
 
         
-        $__internal_e0584d87bb9c78966849d5ae3d1849c2f0e10c7d030a4b40e24fb397f0b74e1f->leave($__internal_e0584d87bb9c78966849d5ae3d1849c2f0e10c7d030a4b40e24fb397f0b74e1f_prof);
+        $__internal_b851554bcab690134a107bb72956c4215ced392ea23e5a8cfe9f590ebea31220->leave($__internal_b851554bcab690134a107bb72956c4215ced392ea23e5a8cfe9f590ebea31220_prof);
 
     }
 
@@ -101,7 +110,7 @@ class __TwigTemplate_0052b6f7e7124b016163d6da1ecc9e21748d3dec851d14a9aadf98351e6
 
     public function getDebugInfo()
     {
-        return array (  59 => 5,  41 => 3,  11 => 1,);
+        return array (  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -116,21 +125,47 @@ class __TwigTemplate_0052b6f7e7124b016163d6da1ecc9e21748d3dec851d14a9aadf98351e6
     {
         return new Twig_Source("{% extends \"PTUTPlatformBundle:Platform:layout.html.twig\" %}
 
-{% block ongletHome %}active{%endblock%}
-
 {% block body %} 
 
-<div class=\"row\">
-<div name=\"article_editor\" class=\"form-group col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-12 col-md-10 col-lg-10\">
-    <label for=\"title_editor\">Titre :</label>
-    <input type=\"text\" name=\"titre\"  class=\"form-control\" id=\"title_editor\">
-    <label for=\"content_editor\">Contenu :</label>
-    <textarea class=\"form-control\" name=\"content_editor\" id=\"content_editor\">
-    </textarea>
-    <script>
-        CKEDITOR.replace('content_editor');
-    </script>
-</div></div>
+<section id=\"article_creator\">
+    <div class=\"row\">
+        <form name=\"article_editor\" method=\"post\" action=\"\" class=\"col-sm-offset-1 col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-10 col-md-10 col-lg-8\">
+            <div class=\"form-group\">
+                <label for=\"thumbnail\">Miniature :</label>
+                <input type=\"file\" name=\"miniature\" id=\"thumbnail_editor\">
+            </div>    
+            <div class=\"form-group\">
+                <label for=\"title_editor\">Titre :</label>
+                <input type=\"text\" name=\"titre\"  class=\"form-control\" id=\"title_editor\">
+            </div>
+            <div class=\"form-group\">
+                <label for=\"content_editor\">Contenu :</label>
+                <textarea class=\"form-control\" name=\"content_editor\" id=\"content_editor\"></textarea>
+            </div>
+            <script>
+                CKEDITOR.config.toolbarGroups=[
+                        { name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+                        { name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
+                        { name: 'editing', groups: [ 'find', 'selection', 'spellchecker', 'editing' ] },
+                        { name: 'forms', groups: [ 'forms' ] },
+                        '/',
+                        { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+                        { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi', 'paragraph' ] },
+                        { name: 'links', groups: [ 'links' ] },
+                        { name: 'insert', groups: [ 'insert' ] },
+                        '/',
+                        { name: 'styles', groups: [ 'styles' ] },
+                        { name: 'colors', groups: [ 'colors' ] },
+                        { name: 'tools', groups: [ 'tools' ] },
+                        { name: 'others', groups: [ 'others' ] },
+                        { name: 'about', groups: [ 'about' ] }
+                    ];
+                CKEDITOR.replace('content_editor');
+            </script>
+            <button type=\"submit\" class=\"btn btn-default\">Créer  l'article</button>
+        </form>
+    </div>
+</section>
 
 
 

@@ -15,20 +15,20 @@ class __TwigTemplate_e432fa73a058f70d30e9978766f6e9408635326f35acf1010844c97d20c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_456ce6c2f09d206fe6901dc7ed3f6259430e3cc843f6380c532be2e0984c036e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_456ce6c2f09d206fe6901dc7ed3f6259430e3cc843f6380c532be2e0984c036e->enter($__internal_456ce6c2f09d206fe6901dc7ed3f6259430e3cc843f6380c532be2e0984c036e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/email_widget.html.php"));
+        $__internal_ecfef2d103c27d96a4366d81b18f7aabd705eb16a4d5bcc093e036a0f8b36ca8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ecfef2d103c27d96a4366d81b18f7aabd705eb16a4d5bcc093e036a0f8b36ca8->enter($__internal_ecfef2d103c27d96a4366d81b18f7aabd705eb16a4d5bcc093e036a0f8b36ca8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/email_widget.html.php"));
 
-        $__internal_9ec08ecfc4d35852bc7495c0e6fea469393fa22b2410f5594f5442d8ed910b12 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9ec08ecfc4d35852bc7495c0e6fea469393fa22b2410f5594f5442d8ed910b12->enter($__internal_9ec08ecfc4d35852bc7495c0e6fea469393fa22b2410f5594f5442d8ed910b12_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/email_widget.html.php"));
+        $__internal_7f4978bacfccfbdf1c57c606ccd17f4db187aff6e56eda21ddee6560f1ee6c79 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7f4978bacfccfbdf1c57c606ccd17f4db187aff6e56eda21ddee6560f1ee6c79->enter($__internal_7f4978bacfccfbdf1c57c606ccd17f4db187aff6e56eda21ddee6560f1ee6c79_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/email_widget.html.php"));
 
         // line 1
         echo "<?php echo \$view['form']->block(\$form, 'form_widget_simple', array('type' => isset(\$type) ? \$type : 'email')) ?>
 ";
         
-        $__internal_456ce6c2f09d206fe6901dc7ed3f6259430e3cc843f6380c532be2e0984c036e->leave($__internal_456ce6c2f09d206fe6901dc7ed3f6259430e3cc843f6380c532be2e0984c036e_prof);
+        $__internal_ecfef2d103c27d96a4366d81b18f7aabd705eb16a4d5bcc093e036a0f8b36ca8->leave($__internal_ecfef2d103c27d96a4366d81b18f7aabd705eb16a4d5bcc093e036a0f8b36ca8_prof);
 
         
-        $__internal_9ec08ecfc4d35852bc7495c0e6fea469393fa22b2410f5594f5442d8ed910b12->leave($__internal_9ec08ecfc4d35852bc7495c0e6fea469393fa22b2410f5594f5442d8ed910b12_prof);
+        $__internal_7f4978bacfccfbdf1c57c606ccd17f4db187aff6e56eda21ddee6560f1ee6c79->leave($__internal_7f4978bacfccfbdf1c57c606ccd17f4db187aff6e56eda21ddee6560f1ee6c79_prof);
 
     }
 

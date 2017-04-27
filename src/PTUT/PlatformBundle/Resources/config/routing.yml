@@ -9,3 +9,11 @@ ptut_platform_view:
 ptut_platform_view_id:
     path:     /actualites/{id}
     defaults: { _controller: PTUTPlatformBundle:Platform:viewid }
+
+ptut_platform_article:
+    path:     /article/{id}
+    defaults: { _controller: PTUTPlatformBundle:Platform:view_article }
+
+ptut_platform_article_creator:
+    path:     /creer/article
+    defaults: { _controller: PTUTPlatformBundle:Platform:article_creator }

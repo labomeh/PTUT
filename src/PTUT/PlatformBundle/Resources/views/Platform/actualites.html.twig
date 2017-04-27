@@ -6,15 +6,15 @@
     <section class="container">
     <h1>Articles</h1>
         <hr>
-        {% for i in 0..10 %}
+        {% for i in 0..1 %}
             {% if i <= taille-1 %}
                 <div class="sol-sm-offset-1 col-sm-10 sol-sm-offset-1">
                     {% if i != 0 %}
                         <hr>
                     {% endif %}
-                    <h2> {{ articles[i].titre }} </h2>
-                    <p> {{ articles[i].presentation }}</p>
-                    <button class="btn btn-danger pull-right">Voir plus</button>
+                    <h2> {{ articles[i+(id-1)*2].titre }} </h2>
+                    <p> {{ articles[i+(id-1)*2].presentation }}</p>
+                    <a class="btn btn-danger pull-right" href="{{path('ptut_platform_article', {'id': '{{i}}'})}}">Voir plus</a>
                 </div>
             {% endif %}
         
@@ -23,9 +23,19 @@
         <hr>
     {% if taille/2 >= 2 %}
             
-            <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
-            <p class="btn btn-danger">666</p>
-            <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
+            {% if id > 1 %}
+                {% set prev = id - 1 %}
+                <a class="btn btn-danger" href="{{path('ptut_platform_view_id', {'id': prev })}}" data-slide="next"><i class="icon-angle-left"></i></a>
+            {% else %}
+                <a class="btn btn-danger" href="" data-slide="next"><i class="icon-angle-left"></i></a>
+            {% endif %}
+            <p class="btn btn-danger">{{id}}</p>
+            {% if id < taille//2 %}
+                {% set next = id + 1 %}
+                <a class="btn btn-danger" href="{{path('ptut_platform_view_id', {'id': next })}}" data-slide="next"><i class="icon-angle-right"></i></a>
+            {% else %}
+                <a class="btn btn-danger" href="" data-slide="next"><i class="icon-angle-right"></i></a>
+            {% endif %}
     {% elseif taille/2 >= 4%}
             <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
             <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>

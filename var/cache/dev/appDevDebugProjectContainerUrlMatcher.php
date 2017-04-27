@@ -115,9 +115,22 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'ptut_platform_view')), array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::viewAction',));
         }
 
-        // ptut_platform_view_id
-        if (0 === strpos($pathinfo, '/actualites') && preg_match('#^/actualites/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ptut_platform_view_id')), array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::viewidAction',));
+        if (0 === strpos($pathinfo, '/a')) {
+            // ptut_platform_view_id
+            if (0 === strpos($pathinfo, '/actualites') && preg_match('#^/actualites/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'ptut_platform_view_id')), array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::viewidAction',));
+            }
+
+            // ptut_platform_article
+            if (0 === strpos($pathinfo, '/article') && preg_match('#^/article/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'ptut_platform_article')), array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::view_articleAction',));
+            }
+
+        }
+
+        // ptut_platform_article_creator
+        if ($pathinfo === '/creer/article') {
+            return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::article_creatorAction',  '_route' => 'ptut_platform_article_creator',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

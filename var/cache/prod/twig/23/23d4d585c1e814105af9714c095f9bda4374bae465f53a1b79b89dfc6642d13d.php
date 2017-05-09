@@ -22,32 +22,32 @@ class __TwigTemplate_61589f4adb9ddfc2932e9e9371a01b0811d14ca9b142adaec62d12a866d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_234bf95968b9cf1a74fc221f31fb8f86688ae31507f95a91adccdf5c4f66de31 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_234bf95968b9cf1a74fc221f31fb8f86688ae31507f95a91adccdf5c4f66de31->enter($__internal_234bf95968b9cf1a74fc221f31fb8f86688ae31507f95a91adccdf5c4f66de31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:home.html.twig"));
+        $__internal_77ea718f8dc27000f0aec6f6b0cea71a403cbb8dbad86245e6292c9327c3557c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_77ea718f8dc27000f0aec6f6b0cea71a403cbb8dbad86245e6292c9327c3557c->enter($__internal_77ea718f8dc27000f0aec6f6b0cea71a403cbb8dbad86245e6292c9327c3557c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:home.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_234bf95968b9cf1a74fc221f31fb8f86688ae31507f95a91adccdf5c4f66de31->leave($__internal_234bf95968b9cf1a74fc221f31fb8f86688ae31507f95a91adccdf5c4f66de31_prof);
+        $__internal_77ea718f8dc27000f0aec6f6b0cea71a403cbb8dbad86245e6292c9327c3557c->leave($__internal_77ea718f8dc27000f0aec6f6b0cea71a403cbb8dbad86245e6292c9327c3557c_prof);
 
     }
 
     // line 3
     public function block_ongletHome($context, array $blocks = array())
     {
-        $__internal_97f492d35984a569485b906445f17a61443fb726746b7ba5db268396b674fefa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_97f492d35984a569485b906445f17a61443fb726746b7ba5db268396b674fefa->enter($__internal_97f492d35984a569485b906445f17a61443fb726746b7ba5db268396b674fefa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_2db7f32cc3f31682b8a307c5aeba1c8caee6f12dcf1ba42a78b013c699ecbce1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2db7f32cc3f31682b8a307c5aeba1c8caee6f12dcf1ba42a78b013c699ecbce1->enter($__internal_2db7f32cc3f31682b8a307c5aeba1c8caee6f12dcf1ba42a78b013c699ecbce1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
         echo "active";
         
-        $__internal_97f492d35984a569485b906445f17a61443fb726746b7ba5db268396b674fefa->leave($__internal_97f492d35984a569485b906445f17a61443fb726746b7ba5db268396b674fefa_prof);
+        $__internal_2db7f32cc3f31682b8a307c5aeba1c8caee6f12dcf1ba42a78b013c699ecbce1->leave($__internal_2db7f32cc3f31682b8a307c5aeba1c8caee6f12dcf1ba42a78b013c699ecbce1_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_e27b890d2f574268ac6a09eeead08fd96f899b1fe9d40adc380e4a70a528f0ae = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e27b890d2f574268ac6a09eeead08fd96f899b1fe9d40adc380e4a70a528f0ae->enter($__internal_e27b890d2f574268ac6a09eeead08fd96f899b1fe9d40adc380e4a70a528f0ae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e09f286801185b9f3c36d2fc177d97f18a8e394d0a2032bf7315f505cda38dce = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e09f286801185b9f3c36d2fc177d97f18a8e394d0a2032bf7315f505cda38dce->enter($__internal_e09f286801185b9f3c36d2fc177d97f18a8e394d0a2032bf7315f505cda38dce_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
 
@@ -117,7 +117,7 @@ class __TwigTemplate_61589f4adb9ddfc2932e9e9371a01b0811d14ca9b142adaec62d12a866d
         </a>
     </section>
 
-    <section id=\"testimonial\" class=\"pumkin\">
+    <section id=\"testimonial\" class=\"asbestos\">
         <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-lg-12\">
@@ -166,7 +166,7 @@ class __TwigTemplate_61589f4adb9ddfc2932e9e9371a01b0811d14ca9b142adaec62d12a866d
 
 ";
         
-        $__internal_e27b890d2f574268ac6a09eeead08fd96f899b1fe9d40adc380e4a70a528f0ae->leave($__internal_e27b890d2f574268ac6a09eeead08fd96f899b1fe9d40adc380e4a70a528f0ae_prof);
+        $__internal_e09f286801185b9f3c36d2fc177d97f18a8e394d0a2032bf7315f505cda38dce->leave($__internal_e09f286801185b9f3c36d2fc177d97f18a8e394d0a2032bf7315f505cda38dce_prof);
 
     }
 
@@ -267,7 +267,7 @@ class __TwigTemplate_61589f4adb9ddfc2932e9e9371a01b0811d14ca9b142adaec62d12a866d
         </a>
     </section>
 
-    <section id=\"testimonial\" class=\"pumkin\">
+    <section id=\"testimonial\" class=\"asbestos\">
         <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-lg-12\">

@@ -2,6 +2,7 @@
 
 namespace PTUT\PlatformBundle\Controller;
 
+use PTUT\PlatformBundle\Entity\Article;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -32,12 +33,25 @@ class PlatformController extends Controller
     public function article_creatorAction()
     {
         if(isset($_POST['content_editor'])){
-            $file=fopen('../src/PTUT/PlatformBundle/Resources/views/Platform/articles/article_1.html.twig','w');
+            $repository = $this->getDoctrine()->getRepository("PTUTPlatformBundle:Article");
+            $articles = $repository->findAll();
+            $id = sizeof($articles) + 1;
+            $file=fopen('../src/PTUT/PlatformBundle/Resources/views/Platform/articles/article_'.$id.'.html.twig','w');
             fwrite($file,'{% extends "PTUTPlatformBundle:Platform:layout.html.twig" %}');
             fwrite($file,'{% block body %}');
             fwrite($file,$_POST['content_editor']);
             fwrite($file,'{% endblock %} ');
             fclose($file);
+            $article = new Article();
+            $article->setTitre($_POST['titre']);
+            $article->setAuteur($_POST['autor']);
+            $article->setPresentation($_POST['presentation']);
+            $article->setDate(new \DateTime('now'));
+                
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($article);
+            $em->flush();
+            
             unset($_POST);
         }
         

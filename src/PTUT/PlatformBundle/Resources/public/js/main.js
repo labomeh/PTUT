@@ -70,11 +70,4 @@ jQuery(function($) {
             }
     });
     
-    $(window).scroll(function(){
-        if($(window).scrollTop() >= 310)
-            {
-                $('#articleD').animate({opacity:'1'},1500);
-                $('#articleG').animate({opacity:'1'},1500);
-            }
-    })
 });

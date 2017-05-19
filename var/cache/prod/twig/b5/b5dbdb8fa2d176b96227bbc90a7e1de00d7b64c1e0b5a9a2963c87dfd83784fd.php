@@ -13,7 +13,7 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
             'include' => array($this, 'block_include'),
             'ongletHome' => array($this, 'block_ongletHome'),
             'ongletEditions' => array($this, 'block_ongletEditions'),
-            'ongletCompte' => array($this, 'block_ongletCompte'),
+            'ongletArticle' => array($this, 'block_ongletArticle'),
             'ongletAbout' => array($this, 'block_ongletAbout'),
             'body' => array($this, 'block_body'),
         );
@@ -21,8 +21,8 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e24647030e299bbfb0256d1bf91b55a49b8ee819ec19307ee440a807fd4ee8b7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e24647030e299bbfb0256d1bf91b55a49b8ee819ec19307ee440a807fd4ee8b7->enter($__internal_e24647030e299bbfb0256d1bf91b55a49b8ee819ec19307ee440a807fd4ee8b7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:layout.html.twig"));
+        $__internal_07342f6dda6f08ee6d238217853dd0bf1a63256b8abf20d30304431c91eb0c3a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_07342f6dda6f08ee6d238217853dd0bf1a63256b8abf20d30304431c91eb0c3a->enter($__internal_07342f6dda6f08ee6d238217853dd0bf1a63256b8abf20d30304431c91eb0c3a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PTUTPlatformBundle:Platform:layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -34,7 +34,7 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
     <meta name=\"description\" content=\"\">
     <meta name=\"author\" content=\"\">
     <link rel=\"icon\" href=\"../../favicon.ico\">
-    <title>PTUT</title>
+    <title>Festival de cinéma amateur</title>
     <link href=\"";
         // line 11
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/css/bootstrap.min.css"), "html", null, true);
@@ -59,18 +59,30 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
         // line 16
         $this->displayBlock('include', $context, $blocks);
         // line 17
-        echo "
+        echo "    <title>PTUT</title>
+
     <!--[if lt IE 9]>
-    <script src=\"../../web/bundles/ptutplatform/js/html5shiv.js\"></script>
-    <script src=\"../../web/bundles/ptutplatform/js/respond.min.js\"></script>
+    <script src=\"";
+        // line 20
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/js/html5shiv.js"), "html", null, true);
+        echo "\"></script>
+    <script src=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/js/respond.min.js"), "html", null, true);
+        echo "\"></script>
     <![endif]-->
     
+    <link rel=\"shortcut icon\" href=\"";
+        // line 24
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/images/ico/favicon.ico"), "html", null, true);
+        echo "\">
     <link rel=\"shortcut icon\" href=\"bundles/ptutplatform/images/ico/favicon.ico\">
     
     <script src=\"";
-        // line 25
+        // line 27
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/ckeditor/ckeditor.js"), "html", null, true);
         echo "\"></script>
+    
 
 </head>
 <body id=\"site\">
@@ -85,35 +97,38 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
                 <span class=\"icon-bar\"></span>
               </button>
                 
-              <a class=\"navbar-brand\" href=\"home\">PTUT S2</a>
+              <a class=\"navbar-brand\" href=\"";
+        // line 43
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("ptut_platform_homepage");
+        echo "\">PTUT S2</a>
+              <a class=\"navbar-brand\" href=\"";
+        // line 44
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("ptut_platform_homepage");
+        echo "\">Festival de cinéma amateur</a>
                 
             </div>
             <div id=\"navbar\" class=\"collapse navbar-collapse\">
               <ul class=\"nav navbar-nav navbar-right\">
                 <li class=\"";
-        // line 45
+        // line 49
         $this->displayBlock('ongletHome', $context, $blocks);
         echo "\"><a href=\"";
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("ptut_platform_view", array("id" => "home"));
-        echo "\">Home</a></li>
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("ptut_platform_homepage");
+        echo "\">Accueil</a></li>
                 <li class=\"dropdown ";
-        // line 46
+        // line 50
         $this->displayBlock('ongletEditions', $context, $blocks);
         echo "\"><a href=\"";
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("ptut_platform_view_id", array("id" => 1));
-        echo "\">Actualités</a>
-                </li>
-                <li class=\"dropdown ";
-        // line 48
-        $this->displayBlock('ongletCompte', $context, $blocks);
-        echo "\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle = \"dropdown\" role=\"button\">Mon compte<span class=\"icon-angle-down\"></span></a>
-                    <ul class=\"dropdown-menu\">
-                        <li><a href=\"#\">Se connecter</a></li>
-                        <li><a href=\"#\">S'inscrire</a></li>
-                    </ul>
-                </li>
+        echo "\">Actualités</a></li>
+\t\t\t\t<li class=\"";
+        // line 51
+        $this->displayBlock('ongletArticle', $context, $blocks);
+        echo "\"><a href=\"";
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("ptut_platform_view", array("id" => 2));
+        echo "\">Articles</a></li>
                 <li class=\"";
-        // line 54
+        // line 52
         $this->displayBlock('ongletAbout', $context, $blocks);
         echo "\"><a href=\"#about\">About</a></li>
               </ul>
@@ -123,118 +138,154 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
     </header>
     
     ";
-        // line 61
+        // line 59
         $this->displayBlock('body', $context, $blocks);
-        // line 64
-        echo "        
+        // line 62
+        echo "    
+        
     <footer id=\"footer\" class=\"midnight-blue\">
-        <div class=\"col-sm-7\"><span class=\"text-muted\">PTUT Manon Rajaonarivelo, Sunny Nguyen, Simon Pasquereau, Mehdi Labourdette, Antonin Guyot - IUT Informatique Lyon 1</span>
+        <section id=\"services\">
+        <div class=\"container\">
+            <div class=\"row\">
+                <div class=\"col-md-4 col-sm-6\">
+                    <div class=\"media\">
+                        <div class=\"pull-left\">
+                            <i class=\"icon-twitter icon-md\"></i>
+                        </div>
+                        <div class=\"media-body\">
+                            <h3 class=\"media-heading\">Twitter Marketing</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class=\"col-md-4 col-sm-6\">
+                    <div class=\"media\">
+                        <div class=\"pull-left\">
+                            <i class=\"icon-facebook icon-md\"></i>
+                        </div>
+                        <div class=\"media-body\">
+                            <h3 class=\"media-heading\">Facebook Marketing</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class=\"col-md-4 col-sm-6\">
+                    <div class=\"media\">
+                        <div class=\"pull-left\">
+                            <i class=\"icon-google-plus icon-md\"></i>
+                        </div>
+                        <div class=\"media-body\">
+                            <h3 class=\"media-heading\">Google Plus Marketing</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+            </div>
+            <center>
+                <span class=\"text-muted\">PTUT Manon Rajaonarivelo, Sunny Nguyen, Simon Pasquereau, Mehdi Labourdette, Antonin Guyot - IUT Informatique Lyon 1</span>
+                <a id=\"gototop\" class=\"gototop pull-right\" href=\"#\"><i class=\"icon-chevron-up\"></i></a>
+            </center>
         </div>
-        <div class=\"col-sm-5\">
-            <ul class=\"pull-right\">
-                <li><a href=\"#\">Home</a></li>
-                <li><a href=\"#\">About Us</a></li>
-                <li><a href=\"#\">Faq</a></li>
-                <li><a href=\"#\">Contact Us</a></li>
-                <li><a id=\"gototop\" class=\"gototop\" href=\"#\"><i class=\"icon-chevron-up\"></i></a></li><!--#gototop-->
-            </ul>
-        </div>
+        </section>
     </footer>
-
     <script src=\"";
-        // line 79
+        // line 109
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/js/jquery.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 80
+        // line 110
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/js/jquery-ui.min.js"), "html", null, true);
+        echo "\"></script>
+    <script src=\"";
+        // line 111
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 81
+        // line 112
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/js/jquery.prettyPhoto.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 82
+        // line 113
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/ptutplatform/js/main.js"), "html", null, true);
         echo "\"></script>
 </body>
 </html>";
         
-        $__internal_e24647030e299bbfb0256d1bf91b55a49b8ee819ec19307ee440a807fd4ee8b7->leave($__internal_e24647030e299bbfb0256d1bf91b55a49b8ee819ec19307ee440a807fd4ee8b7_prof);
+        $__internal_07342f6dda6f08ee6d238217853dd0bf1a63256b8abf20d30304431c91eb0c3a->leave($__internal_07342f6dda6f08ee6d238217853dd0bf1a63256b8abf20d30304431c91eb0c3a_prof);
 
     }
 
     // line 16
     public function block_include($context, array $blocks = array())
     {
-        $__internal_3a04474b4c416128d6d6e3ab682187eb55eaead6dce799eea05d8b56fc29adda = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3a04474b4c416128d6d6e3ab682187eb55eaead6dce799eea05d8b56fc29adda->enter($__internal_3a04474b4c416128d6d6e3ab682187eb55eaead6dce799eea05d8b56fc29adda_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "include"));
+        $__internal_92ffc046fdc531e12a4776cc9ee1282035006a448ab2c8e743fd6541bd4d7a63 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_92ffc046fdc531e12a4776cc9ee1282035006a448ab2c8e743fd6541bd4d7a63->enter($__internal_92ffc046fdc531e12a4776cc9ee1282035006a448ab2c8e743fd6541bd4d7a63_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "include"));
 
         echo " ";
         
-        $__internal_3a04474b4c416128d6d6e3ab682187eb55eaead6dce799eea05d8b56fc29adda->leave($__internal_3a04474b4c416128d6d6e3ab682187eb55eaead6dce799eea05d8b56fc29adda_prof);
+        $__internal_92ffc046fdc531e12a4776cc9ee1282035006a448ab2c8e743fd6541bd4d7a63->leave($__internal_92ffc046fdc531e12a4776cc9ee1282035006a448ab2c8e743fd6541bd4d7a63_prof);
 
     }
 
-    // line 45
+    // line 49
     public function block_ongletHome($context, array $blocks = array())
     {
-        $__internal_e3b6e6270cc78b6457314b83bd8e0f66b2d4ebe1e99f770d20137685ae2826e0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e3b6e6270cc78b6457314b83bd8e0f66b2d4ebe1e99f770d20137685ae2826e0->enter($__internal_e3b6e6270cc78b6457314b83bd8e0f66b2d4ebe1e99f770d20137685ae2826e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_970658ec8dc10086dd6c8810c9e8da24e98b46e240585d45704c0daad628b4a2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_970658ec8dc10086dd6c8810c9e8da24e98b46e240585d45704c0daad628b4a2->enter($__internal_970658ec8dc10086dd6c8810c9e8da24e98b46e240585d45704c0daad628b4a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
         echo " ";
         
-        $__internal_e3b6e6270cc78b6457314b83bd8e0f66b2d4ebe1e99f770d20137685ae2826e0->leave($__internal_e3b6e6270cc78b6457314b83bd8e0f66b2d4ebe1e99f770d20137685ae2826e0_prof);
+        $__internal_970658ec8dc10086dd6c8810c9e8da24e98b46e240585d45704c0daad628b4a2->leave($__internal_970658ec8dc10086dd6c8810c9e8da24e98b46e240585d45704c0daad628b4a2_prof);
 
     }
 
-    // line 46
+    // line 50
     public function block_ongletEditions($context, array $blocks = array())
     {
-        $__internal_77ab9f7e6f6dd8c0a64ea47214de614f41216b158589818d3fa21e6acfb81cc9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_77ab9f7e6f6dd8c0a64ea47214de614f41216b158589818d3fa21e6acfb81cc9->enter($__internal_77ab9f7e6f6dd8c0a64ea47214de614f41216b158589818d3fa21e6acfb81cc9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletEditions"));
+        $__internal_7a368ff2d4cfff9d6b8cd2dc5df8aafd5da97ee064b908643bfee3803b629081 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7a368ff2d4cfff9d6b8cd2dc5df8aafd5da97ee064b908643bfee3803b629081->enter($__internal_7a368ff2d4cfff9d6b8cd2dc5df8aafd5da97ee064b908643bfee3803b629081_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletEditions"));
 
         echo " ";
         
-        $__internal_77ab9f7e6f6dd8c0a64ea47214de614f41216b158589818d3fa21e6acfb81cc9->leave($__internal_77ab9f7e6f6dd8c0a64ea47214de614f41216b158589818d3fa21e6acfb81cc9_prof);
+        $__internal_7a368ff2d4cfff9d6b8cd2dc5df8aafd5da97ee064b908643bfee3803b629081->leave($__internal_7a368ff2d4cfff9d6b8cd2dc5df8aafd5da97ee064b908643bfee3803b629081_prof);
 
     }
 
-    // line 48
-    public function block_ongletCompte($context, array $blocks = array())
+    // line 51
+    public function block_ongletArticle($context, array $blocks = array())
     {
-        $__internal_29a2dafefbdebfc4cd970a339c8219bb54a85396ab617e397f207e7c68250e1f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_29a2dafefbdebfc4cd970a339c8219bb54a85396ab617e397f207e7c68250e1f->enter($__internal_29a2dafefbdebfc4cd970a339c8219bb54a85396ab617e397f207e7c68250e1f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletCompte"));
+        $__internal_0e5183b96ae56d40bd5556f5ab28f3c3135f2b51bc75e9c9a47e006b20882732 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0e5183b96ae56d40bd5556f5ab28f3c3135f2b51bc75e9c9a47e006b20882732->enter($__internal_0e5183b96ae56d40bd5556f5ab28f3c3135f2b51bc75e9c9a47e006b20882732_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletArticle"));
 
         echo " ";
         
-        $__internal_29a2dafefbdebfc4cd970a339c8219bb54a85396ab617e397f207e7c68250e1f->leave($__internal_29a2dafefbdebfc4cd970a339c8219bb54a85396ab617e397f207e7c68250e1f_prof);
+        $__internal_0e5183b96ae56d40bd5556f5ab28f3c3135f2b51bc75e9c9a47e006b20882732->leave($__internal_0e5183b96ae56d40bd5556f5ab28f3c3135f2b51bc75e9c9a47e006b20882732_prof);
 
     }
 
-    // line 54
+    // line 52
     public function block_ongletAbout($context, array $blocks = array())
     {
-        $__internal_bb10ac04ed468e37b23a6c9b0872ee11c86544c2b2f7c821889e8dd1eef04860 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bb10ac04ed468e37b23a6c9b0872ee11c86544c2b2f7c821889e8dd1eef04860->enter($__internal_bb10ac04ed468e37b23a6c9b0872ee11c86544c2b2f7c821889e8dd1eef04860_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletAbout"));
+        $__internal_b271936db2f2d4818291e4710faf3f9166288fd90b11486c74611e85c36039ad = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b271936db2f2d4818291e4710faf3f9166288fd90b11486c74611e85c36039ad->enter($__internal_b271936db2f2d4818291e4710faf3f9166288fd90b11486c74611e85c36039ad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletAbout"));
 
         echo " ";
         
-        $__internal_bb10ac04ed468e37b23a6c9b0872ee11c86544c2b2f7c821889e8dd1eef04860->leave($__internal_bb10ac04ed468e37b23a6c9b0872ee11c86544c2b2f7c821889e8dd1eef04860_prof);
+        $__internal_b271936db2f2d4818291e4710faf3f9166288fd90b11486c74611e85c36039ad->leave($__internal_b271936db2f2d4818291e4710faf3f9166288fd90b11486c74611e85c36039ad_prof);
 
     }
 
-    // line 61
+    // line 59
     public function block_body($context, array $blocks = array())
     {
-        $__internal_eef1f5f096e57cff4efb6da80600fb713307e35697d0968c93831100543aa72f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_eef1f5f096e57cff4efb6da80600fb713307e35697d0968c93831100543aa72f->enter($__internal_eef1f5f096e57cff4efb6da80600fb713307e35697d0968c93831100543aa72f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c4b83e179994fae30ef0d3acc56d8dd99a10b7149072bfbbf555e67f56dda69f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c4b83e179994fae30ef0d3acc56d8dd99a10b7149072bfbbf555e67f56dda69f->enter($__internal_c4b83e179994fae30ef0d3acc56d8dd99a10b7149072bfbbf555e67f56dda69f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 62
+        // line 60
         echo "
     ";
         
-        $__internal_eef1f5f096e57cff4efb6da80600fb713307e35697d0968c93831100543aa72f->leave($__internal_eef1f5f096e57cff4efb6da80600fb713307e35697d0968c93831100543aa72f_prof);
+        $__internal_c4b83e179994fae30ef0d3acc56d8dd99a10b7149072bfbbf555e67f56dda69f->leave($__internal_c4b83e179994fae30ef0d3acc56d8dd99a10b7149072bfbbf555e67f56dda69f_prof);
 
     }
 
@@ -250,7 +301,7 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
 
     public function getDebugInfo()
     {
-        return array (  234 => 62,  228 => 61,  216 => 54,  204 => 48,  192 => 46,  180 => 45,  168 => 16,  158 => 82,  154 => 81,  150 => 80,  146 => 79,  129 => 64,  127 => 61,  117 => 54,  108 => 48,  101 => 46,  95 => 45,  72 => 25,  62 => 17,  60 => 16,  56 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  28 => 1,);
+        return array (  285 => 60,  279 => 59,  267 => 52,  255 => 51,  243 => 50,  231 => 49,  219 => 16,  209 => 113,  205 => 112,  201 => 111,  197 => 110,  193 => 109,  144 => 62,  142 => 59,  132 => 52,  126 => 51,  120 => 50,  114 => 49,  106 => 44,  102 => 43,  83 => 27,  77 => 24,  71 => 21,  67 => 20,  62 => 17,  60 => 16,  56 => 15,  52 => 14,  48 => 13,  44 => 12,  40 => 11,  28 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -272,22 +323,25 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
     <meta name=\"description\" content=\"\">
     <meta name=\"author\" content=\"\">
     <link rel=\"icon\" href=\"../../favicon.ico\">
-    <title>PTUT</title>
+    <title>Festival de cinéma amateur</title>
     <link href=\"{{ asset('bundles/ptutplatform/css/bootstrap.min.css')}}\" rel=\"stylesheet\">
     <link href=\"{{ asset('bundles/ptutplatform/css/font-awesome.min.css')}}\" rel=\"stylesheet\">
     <link href=\"{{ asset('bundles/ptutplatform/css/prettyPhoto.css')}}\" rel=\"stylesheet\">
     <link href=\"{{ asset('bundles/ptutplatform/css/animate.css')}}\" rel=\"stylesheet\">
     <link href=\"{{ asset('bundles/ptutplatform/css/main.css')}}\" rel=\"stylesheet\">
     {% block include %} {% endblock %}
+    <title>PTUT</title>
 
     <!--[if lt IE 9]>
-    <script src=\"../../web/bundles/ptutplatform/js/html5shiv.js\"></script>
-    <script src=\"../../web/bundles/ptutplatform/js/respond.min.js\"></script>
+    <script src=\"{{ asset('bundles/ptutplatform/js/html5shiv.js')}}\"></script>
+    <script src=\"{{ asset('bundles/ptutplatform/js/respond.min.js')}}\"></script>
     <![endif]-->
     
+    <link rel=\"shortcut icon\" href=\"{{ asset('bundles/ptutplatform/images/ico/favicon.ico') }}\">
     <link rel=\"shortcut icon\" href=\"bundles/ptutplatform/images/ico/favicon.ico\">
     
     <script src=\"{{ asset('bundles/ptutplatform/ckeditor/ckeditor.js') }}\"></script>
+    
 
 </head>
 <body id=\"site\">
@@ -302,20 +356,15 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
                 <span class=\"icon-bar\"></span>
               </button>
                 
-              <a class=\"navbar-brand\" href=\"home\">PTUT S2</a>
+              <a class=\"navbar-brand\" href=\"{{ path('ptut_platform_homepage') }}\">PTUT S2</a>
+              <a class=\"navbar-brand\" href=\"{{path('ptut_platform_homepage')}}\">Festival de cinéma amateur</a>
                 
             </div>
             <div id=\"navbar\" class=\"collapse navbar-collapse\">
               <ul class=\"nav navbar-nav navbar-right\">
-                <li class=\"{% block ongletHome %} {% endblock %}\"><a href=\"{{path('ptut_platform_view', {'id': 'home'})}}\">Home</a></li>
-                <li class=\"dropdown {% block ongletEditions %} {% endblock %}\"><a href=\"{{path('ptut_platform_view_id', {'id': 1})}}\">Actualités</a>
-                </li>
-                <li class=\"dropdown {% block ongletCompte %} {% endblock %}\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle = \"dropdown\" role=\"button\">Mon compte<span class=\"icon-angle-down\"></span></a>
-                    <ul class=\"dropdown-menu\">
-                        <li><a href=\"#\">Se connecter</a></li>
-                        <li><a href=\"#\">S'inscrire</a></li>
-                    </ul>
-                </li>
+                <li class=\"{% block ongletHome %} {% endblock %}\"><a href=\"{{ path('ptut_platform_homepage') }}\">Accueil</a></li>
+                <li class=\"dropdown {% block ongletEditions %} {% endblock %}\"><a href=\"{{path('ptut_platform_view_id', {'id': 1})}}\">Actualités</a></li>
+\t\t\t\t<li class=\"{% block ongletArticle %} {% endblock %}\"><a href=\"{{path('ptut_platform_view', {'id': 2})}}\">Articles</a></li>
                 <li class=\"{% block ongletAbout %} {% endblock %}\"><a href=\"#about\">About</a></li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -326,25 +375,58 @@ class __TwigTemplate_378720e8608b284ad350ebe5f89a3027eae3c5e100a7faf1942ee000e2e
     {% block body %}
 
     {% endblock %}
+    
         
     <footer id=\"footer\" class=\"midnight-blue\">
-        <div class=\"col-sm-7\"><span class=\"text-muted\">PTUT Manon Rajaonarivelo, Sunny Nguyen, Simon Pasquereau, Mehdi Labourdette, Antonin Guyot - IUT Informatique Lyon 1</span>
+        <section id=\"services\">
+        <div class=\"container\">
+            <div class=\"row\">
+                <div class=\"col-md-4 col-sm-6\">
+                    <div class=\"media\">
+                        <div class=\"pull-left\">
+                            <i class=\"icon-twitter icon-md\"></i>
+                        </div>
+                        <div class=\"media-body\">
+                            <h3 class=\"media-heading\">Twitter Marketing</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class=\"col-md-4 col-sm-6\">
+                    <div class=\"media\">
+                        <div class=\"pull-left\">
+                            <i class=\"icon-facebook icon-md\"></i>
+                        </div>
+                        <div class=\"media-body\">
+                            <h3 class=\"media-heading\">Facebook Marketing</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class=\"col-md-4 col-sm-6\">
+                    <div class=\"media\">
+                        <div class=\"pull-left\">
+                            <i class=\"icon-google-plus icon-md\"></i>
+                        </div>
+                        <div class=\"media-body\">
+                            <h3 class=\"media-heading\">Google Plus Marketing</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+            </div>
+            <center>
+                <span class=\"text-muted\">PTUT Manon Rajaonarivelo, Sunny Nguyen, Simon Pasquereau, Mehdi Labourdette, Antonin Guyot - IUT Informatique Lyon 1</span>
+                <a id=\"gototop\" class=\"gototop pull-right\" href=\"#\"><i class=\"icon-chevron-up\"></i></a>
+            </center>
         </div>
-        <div class=\"col-sm-5\">
-            <ul class=\"pull-right\">
-                <li><a href=\"#\">Home</a></li>
-                <li><a href=\"#\">About Us</a></li>
-                <li><a href=\"#\">Faq</a></li>
-                <li><a href=\"#\">Contact Us</a></li>
-                <li><a id=\"gototop\" class=\"gototop\" href=\"#\"><i class=\"icon-chevron-up\"></i></a></li><!--#gototop-->
-            </ul>
-        </div>
+        </section>
     </footer>
-
-    <script src=\"{{ asset('bundles/ptutplatform/js/jquery.js')}}\"></script>
-    <script src=\"{{ asset('bundles/ptutplatform/js/bootstrap.min.js')}}\"></script>
-    <script src=\"{{ asset('bundles/ptutplatform/js/jquery.prettyPhoto.js')}}\"></script>
-    <script src=\"{{ asset('bundles/ptutplatform/js/main.js')}}\"></script>
+    <script src=\"{{ asset('bundles/ptutplatform/js/jquery.js') }}\"></script>
+    <script src=\"{{ asset('bundles/ptutplatform/js/jquery-ui.min.js') }}\"></script>
+    <script src=\"{{ asset('bundles/ptutplatform/js/bootstrap.min.js') }}\"></script>
+    <script src=\"{{ asset('bundles/ptutplatform/js/jquery.prettyPhoto.js') }}\"></script>
+    <script src=\"{{ asset('bundles/ptutplatform/js/main.js') }}\"></script>
 </body>
 </html>", "PTUTPlatformBundle:Platform:layout.html.twig", "C:\\wamp64\\www\\ptut\\src\\PTUT\\PlatformBundle/Resources/views/Platform/layout.html.twig");
     }

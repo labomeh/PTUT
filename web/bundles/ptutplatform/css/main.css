@@ -642,12 +642,6 @@ body > section {
   height: 30px;
   line-height: 30px;
 }
-.well {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: 0;
-}
 ul.breadcrumb {
   margin: 20px 0 0;
   background: transparent;

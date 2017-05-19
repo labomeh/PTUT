@@ -1,3 +1,13 @@
 ptut_platform:
     resource: "@PTUTPlatformBundle/Resources/config/routing.yml"
     prefix:   /
+
+login:
+    path: /login
+    defaults: { _controller: PTUTUserBundle:Security:login }
+    
+login_check:
+    path: /login_check
+    
+logout:
+    path: /logout

@@ -1,0 +1,44 @@
+{% extends "PTUTPlatformBundle:Platform:layout.html.twig" %}
+
+{% block body %}
+
+    {% if error %}
+        <div class="alert alert-danger">{{ error.message }}</div>
+    {% endif %}
+<div class="container">
+    <form class="form-horizontal col-sm-offset-2 col-sm-8" action="{{ path('login_check') }}" method="post" style="margin-top:10%;margin-bottom:10%;">
+        <fieldset>
+
+        <!-- Form Name -->
+        <legend>Connexion</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="username">Utilisateur</label>  
+          <div class="col-md-4">
+          <input id="username" name="_username" placeholder="{{ last_username }}" class="form-control input-md" required="" type="text">
+
+          </div>
+        </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="password">Mot de passe</label>
+          <div class="col-md-4">
+            <input id="password" name="_password" placeholder="" class="form-control input-md" required="" type="password">
+
+          </div>
+        </div>
+            
+            <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for=""></label>
+          <div class="col-md-4 pull-right">
+            <button class="btn btn-primary" type="submit">Connexion</button>
+          </div>
+        </div>
+
+        </fieldset>
+    </form>
+</div>
+{% endblock %}

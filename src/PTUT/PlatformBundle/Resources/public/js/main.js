@@ -36,7 +36,22 @@ jQuery(function($) {
 			});
 		}
 	});
-
+    
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+        $("#myBtn2").click(function(){
+            $("#myModal2").modal();
+        });
+        $("#myBtn3").click(function(){
+            $("#myModal3").modal();
+        });
+        $("#myBtn4").click(function(){
+            $("#myModal4").modal();
+        });
+    });
+    
 	//contact form
 	var form = $('.contact-form');
 	form.submit(function () {

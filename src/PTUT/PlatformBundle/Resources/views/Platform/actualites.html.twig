@@ -29,29 +29,157 @@
 {% block ongletEditions %}active{%endblock%}
 
 {% block body %} 
-    <section class="container">
-        <div class="col-sm-10">
-            <fieldset>
-                <legend><h1>Articles</h1></legend>
-                    {% for i in 0..1 %}
-                        {% if i <= taille-1 %}
-                            
-                                <div class="portfolio-item">
-                                    <div class="item-inner well well-sm col-sm-11">
-                                        <div>
-                                            <h3> {{ articles[i+(id-1)*2].titre }} </h3>
-                                            <p> {{ articles[i+(id-1)*2].presentation }}</p>
-                                            {% set page = i+(id-1)*2+1 %}
-                                        </div>
-                                        <div class="overlay"><a class="preview btn btn-danger" href="{{path('ptut_platform_article', {'id': page })}}"><i class="icon-eye-open"></i></a></div>
-                                    </div>
-                                </div>
-                            
-                        {% endif %}
 
-                    {% endfor %}
+    <section id="title" class="pomegranate">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Actualités</h1>
+                    <p>Dernières actualités à la mode !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="container">
+        <div class="row">
+            <aside class="col-sm-4 col-sm-push-8">
+                    <div class="widget search">
+                        <form role="form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" autocomplete="off" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div><!--/.search-->
+
+                    <div class="widget ads">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="#"><img class="img-responsive img-rounded" src="images/ads/ad1.png" alt=""></a>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <a href="#"><img class="img-responsive img-rounded" src="images/ads/ad2.png" alt=""></a>
+                            </div>
+                        </div>
+                        <p> </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="#"><img class="img-responsive img-rounded" src="images/ads/ad3.png" alt=""></a>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <a href="#"><img class="img-responsive img-rounded" src="images/ads/ad4.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div><!--/.ads-->     
+
+                    <div class="widget categories">
+                        <h3>Blog Categories</h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="arrow">
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Updates</a></li>
+                                    <li><a href="#">Tutorial</a></li>
+                                    <li><a href="#">News</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="arrow">
+                                    <li><a href="#">Joomla</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                    <li><a href="#">Drupal</a></li>
+                                    <li><a href="#">Magento</a></li>
+                                    <li><a href="#">Bootstrap</a></li>
+                                </ul>
+                            </div>
+                        </div>                     
+                    </div><!--/.categories-->
+                    <div class="widget tags">
+                        <h3>Tag Cloud</h3>
+                        <ul class="tag-cloud">
+                            <li><a class="btn btn-xs btn-primary" href="#">CSS3</a></li>
+                            <li><a class="btn btn-xs btn-primary" href="#">HTML5</a></li>
+                            <li><a class="btn btn-xs btn-primary" href="#">WordPress</a></li>
+                            <li><a class="btn btn-xs btn-primary" href="#">Joomla</a></li>
+                            <li><a class="btn btn-xs btn-primary" href="#">Drupal</a></li>
+                            <li><a class="btn btn-xs btn-primary" href="#">Bootstrap</a></li>
+                            <li><a class="btn btn-xs btn-primary" href="#">jQuery</a></li>
+                            <li><a class="btn btn-xs btn-primary" href="#">Tutorial</a></li>
+                            <li><a class="btn btn-xs btn-primary" href="#">Update</a></li>
+                        </ul>
+                    </div><!--/.tags-->
+                </aside>
+            <div class="col-sm-8 col-sm-pull-4">
+                <div class="blog">
+                    {% for i in 0..3 %}
+                        {% if i+(id-1)*4 <= taille %}
+                                <div class="blog-item">
+                                    {% set num = "asset('bundles/ptutplatform/images/blog/article_" ~ (i+1)+(id-1)*4 ~ ".jpg'" %}
+                                    <img class="img-responsive img-blog" src="{{ asset('bundles/ptutplatform/images/blog/article_'~((i+1)+(id-1)*4)~'.jpg' ) }}" width="100%" alt="" />
+                                        <div class="blog-content">
+                                            <h3>{{ articles[i+(id-1)*4].titre }} </h3>
+                                            <div class="entry-meta">
+                                                <span><i class="icon-user"></i>John</span>
+                                                <span><i class="icon-folder-close"></i>Bootstrap</span>
+                                                <span><i class="icon-calendar"></i>Sept 16th, 2012</span>
+                                                <span><i class="icon-comment"></i>3 Comments</span>
+                                            </div>
+                                            <p> {{ articles[i+(id-1)*4].presentation }}</p>
+                                            {% set page = i+(id-1)*4+1 %}
+                                            {% if i == 0 %}
+                                            <a class="preview btn btn-default" id="myBtn">Voir plus</a>
+                                            {% elseif i == 1 %}
+                                            <a class="preview btn btn-default" id="myBtn2">Voir plus</a>
+                                            {% elseif i == 2 %}
+                                            <a class="preview btn btn-default" id="myBtn3">Voir plus</a>
+                                            {% else %}
+                                            <a class="preview btn btn-default" id="myBtn4">Voir plus</a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    {% if i == 0 %}
+                                    <div class="modal fade" id="myModal" role="dialog">
+                                    {% elseif i == 1 %}
+                                    <div class="modal fade" id="myModal2" role="dialog">
+                                    {% elseif i == 2 %}
+                                    <div class="modal fade" id="myModal3" role="dialog">
+                                    {% else %}
+                                    <div class="modal fade" id="myModal4" role="dialog">
+                                    {% endif %}
+                                        <div class="modal-dialog">
+
+                                          <!-- Modal content-->
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <h2 class="modal-title">{{ articles[i+(id-1)*4].titre }}</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                              {% include "PTUTPlatformBundle:Platform:article_" ~ page ~ ".html.twig" %}
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                </div>
+
+                            {% endif %}
+
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!--
                     <div class="btn-group col-sm-12">
-                    {% if taille/2 >= 2 %}
+                    {% if taille/2 >= 4 %}
 
                             {% if id > 1 %}
                                 {% set prev = id - 1 %}
@@ -83,7 +211,7 @@
                   <a href="#">&raquo;</a>
                 </div>
                 </center>
-            </fieldset>
         </div>
+         -->
     </section>
 {%endblock%}

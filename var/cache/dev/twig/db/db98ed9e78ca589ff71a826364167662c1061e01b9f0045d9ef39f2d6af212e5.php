@@ -22,47 +22,47 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ba42e51c8d6888b829f34beb9963f7e959c4611aa68455910545e22f38fbb6e3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ba42e51c8d6888b829f34beb9963f7e959c4611aa68455910545e22f38fbb6e3->enter($__internal_ba42e51c8d6888b829f34beb9963f7e959c4611aa68455910545e22f38fbb6e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@PTUTPlatform/Platform/home.html.twig"));
+        $__internal_ae32800abfa072a1cbd1cf9c6b1717d273f93d11f5a1d522a6bbe4a7ec426f6d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ae32800abfa072a1cbd1cf9c6b1717d273f93d11f5a1d522a6bbe4a7ec426f6d->enter($__internal_ae32800abfa072a1cbd1cf9c6b1717d273f93d11f5a1d522a6bbe4a7ec426f6d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@PTUTPlatform/Platform/home.html.twig"));
 
-        $__internal_c0edb9c29260fd00cb601cd07b76abb85bb015daa7f8ac9a5fe5a6d161851d40 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c0edb9c29260fd00cb601cd07b76abb85bb015daa7f8ac9a5fe5a6d161851d40->enter($__internal_c0edb9c29260fd00cb601cd07b76abb85bb015daa7f8ac9a5fe5a6d161851d40_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@PTUTPlatform/Platform/home.html.twig"));
+        $__internal_38c69579fd6554f767beac54cf43917427a9058a34c09e39e3309d5cd5002d6f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_38c69579fd6554f767beac54cf43917427a9058a34c09e39e3309d5cd5002d6f->enter($__internal_38c69579fd6554f767beac54cf43917427a9058a34c09e39e3309d5cd5002d6f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@PTUTPlatform/Platform/home.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ba42e51c8d6888b829f34beb9963f7e959c4611aa68455910545e22f38fbb6e3->leave($__internal_ba42e51c8d6888b829f34beb9963f7e959c4611aa68455910545e22f38fbb6e3_prof);
+        $__internal_ae32800abfa072a1cbd1cf9c6b1717d273f93d11f5a1d522a6bbe4a7ec426f6d->leave($__internal_ae32800abfa072a1cbd1cf9c6b1717d273f93d11f5a1d522a6bbe4a7ec426f6d_prof);
 
         
-        $__internal_c0edb9c29260fd00cb601cd07b76abb85bb015daa7f8ac9a5fe5a6d161851d40->leave($__internal_c0edb9c29260fd00cb601cd07b76abb85bb015daa7f8ac9a5fe5a6d161851d40_prof);
+        $__internal_38c69579fd6554f767beac54cf43917427a9058a34c09e39e3309d5cd5002d6f->leave($__internal_38c69579fd6554f767beac54cf43917427a9058a34c09e39e3309d5cd5002d6f_prof);
 
     }
 
     // line 3
     public function block_ongletHome($context, array $blocks = array())
     {
-        $__internal_88d18428912945f2bc0b196ad88037c4bca32e41b2f259d587b95c41206703d8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_88d18428912945f2bc0b196ad88037c4bca32e41b2f259d587b95c41206703d8->enter($__internal_88d18428912945f2bc0b196ad88037c4bca32e41b2f259d587b95c41206703d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_fe23b3916628d3e7b1cf3e3d97c76d74efbbca7d68915f7d999be1809811ccc2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fe23b3916628d3e7b1cf3e3d97c76d74efbbca7d68915f7d999be1809811ccc2->enter($__internal_fe23b3916628d3e7b1cf3e3d97c76d74efbbca7d68915f7d999be1809811ccc2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
-        $__internal_6dfc2412ba4b56a71f9f950e3a1ca8bec7713b734631b03150bf57efa6de0750 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6dfc2412ba4b56a71f9f950e3a1ca8bec7713b734631b03150bf57efa6de0750->enter($__internal_6dfc2412ba4b56a71f9f950e3a1ca8bec7713b734631b03150bf57efa6de0750_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_66abc8365c1ff748a96a314680feba0864ddb0b3ef6cb4c9313f436e7b2ba399 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_66abc8365c1ff748a96a314680feba0864ddb0b3ef6cb4c9313f436e7b2ba399->enter($__internal_66abc8365c1ff748a96a314680feba0864ddb0b3ef6cb4c9313f436e7b2ba399_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
         echo "active";
         
-        $__internal_6dfc2412ba4b56a71f9f950e3a1ca8bec7713b734631b03150bf57efa6de0750->leave($__internal_6dfc2412ba4b56a71f9f950e3a1ca8bec7713b734631b03150bf57efa6de0750_prof);
+        $__internal_66abc8365c1ff748a96a314680feba0864ddb0b3ef6cb4c9313f436e7b2ba399->leave($__internal_66abc8365c1ff748a96a314680feba0864ddb0b3ef6cb4c9313f436e7b2ba399_prof);
 
         
-        $__internal_88d18428912945f2bc0b196ad88037c4bca32e41b2f259d587b95c41206703d8->leave($__internal_88d18428912945f2bc0b196ad88037c4bca32e41b2f259d587b95c41206703d8_prof);
+        $__internal_fe23b3916628d3e7b1cf3e3d97c76d74efbbca7d68915f7d999be1809811ccc2->leave($__internal_fe23b3916628d3e7b1cf3e3d97c76d74efbbca7d68915f7d999be1809811ccc2_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_4aad3dc83ed8398d68f6b5ec925d55adb86d228fd11b8b329b183684c409f58b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4aad3dc83ed8398d68f6b5ec925d55adb86d228fd11b8b329b183684c409f58b->enter($__internal_4aad3dc83ed8398d68f6b5ec925d55adb86d228fd11b8b329b183684c409f58b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_75e9e894152d1b2fced8af6b01fd5a58aade6a78b5b502b432388cdd5b10c046 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_75e9e894152d1b2fced8af6b01fd5a58aade6a78b5b502b432388cdd5b10c046->enter($__internal_75e9e894152d1b2fced8af6b01fd5a58aade6a78b5b502b432388cdd5b10c046_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_e1e249a08d5c5140c8095aa05ac4b1be07f83acaa9ac84b892c29ff78c3477b7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e1e249a08d5c5140c8095aa05ac4b1be07f83acaa9ac84b892c29ff78c3477b7->enter($__internal_e1e249a08d5c5140c8095aa05ac4b1be07f83acaa9ac84b892c29ff78c3477b7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_ecfe3a50503068c3f5bb7cb3364905380cc750bb9d1ef4688bf0705a4dddca6f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ecfe3a50503068c3f5bb7cb3364905380cc750bb9d1ef4688bf0705a4dddca6f->enter($__internal_ecfe3a50503068c3f5bb7cb3364905380cc750bb9d1ef4688bf0705a4dddca6f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
 
@@ -72,42 +72,90 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                 <li data-target=\"#main-slider\" data-slide-to=\"0\" class=\"active\"></li>
                 <li data-target=\"#main-slider\" data-slide-to=\"1\"></li>
                 <li data-target=\"#main-slider\" data-slide-to=\"2\"></li>
+\t\t\t\t<li data-target=\"#main-slider\" data-slide-to=\"3\"></li>
+                <li data-target=\"#main-slider\" data-slide-to=\"4\"></li>
+\t\t\t\t<li data-target=\"#main-slider\" data-slide-to=\"5\"></li>
+                <li data-target=\"#main-slider\" data-slide-to=\"6\"></li>
             </ol>
             <div class=\"carousel-inner\">
-                <div class=\"item active\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg1.jpg)\">
+                <div class=\"item active\" style=\"background-image: url(bundles/ptutplatform/images/slider/cinema.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-12\">
                                 <div class=\"carousel-content centered\">
-                                    <h2 class=\"animation animated-item-1\">.............................</h2>
-                                    <p class=\"animation animated-item-2\">.....................</p>
+                                    <h2 class=\"animation animated-item-1\">Le festival du cinéma vous ouvre ses portes</h2>
+                                    <p class=\"animation animated-item-2\">Du 10 au 20 Mai 2017</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg2.jpg)\">
+\t\t\t\t
+\t\t\t\t<div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/gattaca.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-12\">
-                                <div class=\"carousel-content center centered\">
-                                    <h2 class=\"boxed animation animated-item-1\">............</h2>
-                                    <p class=\"boxed animation animated-item-2\">...............</p>
-                                    <br>
-                                    <a class=\"btn btn-md animation animated-item-3\" href=\"#\">Learn More</a>
+                                <div class=\"carousel-content centered\">
+                                    <h2 class=\"animation animated-item-1\">Bienvenue à Gattaca</h2>
+                                    <p class=\"animation animated-item-2\">Projections supplémentaires</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg3.jpg)\">
+\t\t\t\t
+\t\t\t\t<div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/heis.jpg)\">
+                    <div class=\"container\">
+                        <div class=\"row\">
+                            <div class=\"col-sm-12\">
+                                <div class=\"carousel-content centered\">
+                                    <h2 class=\"animation animated-item-1\">Heis</h2>
+                                    <p class=\"animation animated-item-2\">Le cinéma français à l'honneur</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+\t\t\t\t
+                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/laguerriere.jpg)\">
+                    <div class=\"container\">
+                        <div class=\"row\">
+                            <div class=\"col-sm-12\">
+                                <div class=\"carousel-content centered\">
+                                    <h2 class=\"animation animated-item-1\">Guerrière</h2>
+                                    <p class=\"animation animated-item-2\">Un film à fleur de peau</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+\t\t\t\t
+\t\t\t\t<div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/manfromearth.jpg)\">
+                    <div class=\"container\">
+                        <div class=\"row\">
+                            <div class=\"col-sm-12\">
+                                <div class=\"carousel-content centered\">
+                                    <h2 class=\"animation animated-item-1\">The Man From Earth</h2>
+                                    <p class=\"animation animated-item-2\">Un huis clos captivant</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+\t\t\t\t
+                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/manchester.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-6\">
                                 <div class=\"carousel-content centered\">
-                                    <h2 class=\"animation animated-item-1\">.............................</h2>
-                                    <p class=\"animation animated-item-2\">..........</p>
-                                    <a class=\"btn btn-md animation animated-item-3\" href=\"#\">Learn More</a>
+                                    <h2 class=\"animation animated-item-1\">Manchester by the sea</h2>
+                                    <p class=\"animation animated-item-2\">De Casey Affleck</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                             <!--
@@ -131,60 +179,12 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
             <i class=\"icon-angle-right\"></i>
         </a>
     </section>
-
-    <section id=\"testimonial\" class=\"asbestos\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-lg-12\">
-                    <div class=\"center\">
-                        <h2>Derniers articles</h2>
-                    </div>
-                    <div class=\"gap\"></div>
-                    <div class=\"row\">
-                        <div id=\"articleG\" class=\"col-md-6\" style=\"opacity:0\">
-                            <blockquote>
-                                <p> ";
-        // line 84
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["articles"] ?? $this->getContext($context, "articles")), 0, array(), "array"), "titre", array()), "html", null, true);
-        echo " </p>
-                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
-                            </blockquote>
-                            <blockquote>
-                                <p>";
-        // line 88
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["articles"] ?? $this->getContext($context, "articles")), 1, array(), "array"), "titre", array()), "html", null, true);
-        echo "</p>
-                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
-                            </blockquote>
-                        </div>
-                        <div id=\"articleD\" class=\"col-md-6\" style=\"opacity:0\">
-                            <blockquote>
-                                <p>";
-        // line 94
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["articles"] ?? $this->getContext($context, "articles")), 2, array(), "array"), "titre", array()), "html", null, true);
-        echo "</p>
-                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
-                            </blockquote>
-                            <blockquote>
-                                <p>";
-        // line 98
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["articles"] ?? $this->getContext($context, "articles")), 3, array(), "array"), "titre", array()), "html", null, true);
-        echo "</p>
-                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 ";
         
-        $__internal_e1e249a08d5c5140c8095aa05ac4b1be07f83acaa9ac84b892c29ff78c3477b7->leave($__internal_e1e249a08d5c5140c8095aa05ac4b1be07f83acaa9ac84b892c29ff78c3477b7_prof);
+        $__internal_ecfe3a50503068c3f5bb7cb3364905380cc750bb9d1ef4688bf0705a4dddca6f->leave($__internal_ecfe3a50503068c3f5bb7cb3364905380cc750bb9d1ef4688bf0705a4dddca6f_prof);
 
         
-        $__internal_4aad3dc83ed8398d68f6b5ec925d55adb86d228fd11b8b329b183684c409f58b->leave($__internal_4aad3dc83ed8398d68f6b5ec925d55adb86d228fd11b8b329b183684c409f58b_prof);
+        $__internal_75e9e894152d1b2fced8af6b01fd5a58aade6a78b5b502b432388cdd5b10c046->leave($__internal_75e9e894152d1b2fced8af6b01fd5a58aade6a78b5b502b432388cdd5b10c046_prof);
 
     }
 
@@ -200,7 +200,7 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
 
     public function getDebugInfo()
     {
-        return array (  171 => 98,  164 => 94,  155 => 88,  148 => 84,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -225,42 +225,90 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                 <li data-target=\"#main-slider\" data-slide-to=\"0\" class=\"active\"></li>
                 <li data-target=\"#main-slider\" data-slide-to=\"1\"></li>
                 <li data-target=\"#main-slider\" data-slide-to=\"2\"></li>
+\t\t\t\t<li data-target=\"#main-slider\" data-slide-to=\"3\"></li>
+                <li data-target=\"#main-slider\" data-slide-to=\"4\"></li>
+\t\t\t\t<li data-target=\"#main-slider\" data-slide-to=\"5\"></li>
+                <li data-target=\"#main-slider\" data-slide-to=\"6\"></li>
             </ol>
             <div class=\"carousel-inner\">
-                <div class=\"item active\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg1.jpg)\">
+                <div class=\"item active\" style=\"background-image: url(bundles/ptutplatform/images/slider/cinema.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-12\">
                                 <div class=\"carousel-content centered\">
-                                    <h2 class=\"animation animated-item-1\">.............................</h2>
-                                    <p class=\"animation animated-item-2\">.....................</p>
+                                    <h2 class=\"animation animated-item-1\">Le festival du cinéma vous ouvre ses portes</h2>
+                                    <p class=\"animation animated-item-2\">Du 10 au 20 Mai 2017</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg2.jpg)\">
+\t\t\t\t
+\t\t\t\t<div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/gattaca.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-12\">
-                                <div class=\"carousel-content center centered\">
-                                    <h2 class=\"boxed animation animated-item-1\">............</h2>
-                                    <p class=\"boxed animation animated-item-2\">...............</p>
-                                    <br>
-                                    <a class=\"btn btn-md animation animated-item-3\" href=\"#\">Learn More</a>
+                                <div class=\"carousel-content centered\">
+                                    <h2 class=\"animation animated-item-1\">Bienvenue à Gattaca</h2>
+                                    <p class=\"animation animated-item-2\">Projections supplémentaires</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/bg3.jpg)\">
+\t\t\t\t
+\t\t\t\t<div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/heis.jpg)\">
+                    <div class=\"container\">
+                        <div class=\"row\">
+                            <div class=\"col-sm-12\">
+                                <div class=\"carousel-content centered\">
+                                    <h2 class=\"animation animated-item-1\">Heis</h2>
+                                    <p class=\"animation animated-item-2\">Le cinéma français à l'honneur</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+\t\t\t\t
+                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/laguerriere.jpg)\">
+                    <div class=\"container\">
+                        <div class=\"row\">
+                            <div class=\"col-sm-12\">
+                                <div class=\"carousel-content centered\">
+                                    <h2 class=\"animation animated-item-1\">Guerrière</h2>
+                                    <p class=\"animation animated-item-2\">Un film à fleur de peau</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+\t\t\t\t
+\t\t\t\t<div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/manfromearth.jpg)\">
+                    <div class=\"container\">
+                        <div class=\"row\">
+                            <div class=\"col-sm-12\">
+                                <div class=\"carousel-content centered\">
+                                    <h2 class=\"animation animated-item-1\">The Man From Earth</h2>
+                                    <p class=\"animation animated-item-2\">Un huis clos captivant</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+\t\t\t\t
+                <div class=\"item\" style=\"background-image: url(bundles/ptutplatform/images/slider/manchester.jpg)\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-sm-6\">
                                 <div class=\"carousel-content centered\">
-                                    <h2 class=\"animation animated-item-1\">.............................</h2>
-                                    <p class=\"animation animated-item-2\">..........</p>
-                                    <a class=\"btn btn-md animation animated-item-3\" href=\"#\">Learn More</a>
+                                    <h2 class=\"animation animated-item-1\">Manchester by the sea</h2>
+                                    <p class=\"animation animated-item-2\">De Casey Affleck</p>
+\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                             <!--
@@ -284,42 +332,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
             <i class=\"icon-angle-right\"></i>
         </a>
     </section>
-
-    <section id=\"testimonial\" class=\"asbestos\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-lg-12\">
-                    <div class=\"center\">
-                        <h2>Derniers articles</h2>
-                    </div>
-                    <div class=\"gap\"></div>
-                    <div class=\"row\">
-                        <div id=\"articleG\" class=\"col-md-6\" style=\"opacity:0\">
-                            <blockquote>
-                                <p> {{ articles[0].titre }} </p>
-                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
-                            </blockquote>
-                            <blockquote>
-                                <p>{{ articles[1].titre }}</p>
-                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
-                            </blockquote>
-                        </div>
-                        <div id=\"articleD\" class=\"col-md-6\" style=\"opacity:0\">
-                            <blockquote>
-                                <p>{{ articles[2].titre }}</p>
-                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
-                            </blockquote>
-                            <blockquote>
-                                <p>{{ articles[3].titre }}</p>
-                                <small>Someone famous in <cite title=\"Source Title\">Source Title</cite></small>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 {%endblock%}", "@PTUTPlatform/Platform/home.html.twig", "C:\\wamp64\\www\\ptut\\src\\PTUT\\PlatformBundle\\Resources\\views\\Platform\\home.html.twig");
     }
 }

@@ -110,8 +110,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::indexAction',  '_route' => 'ptut_platform_homepage',);
         }
 
+        // ptut_redirect
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'ptut_redirect');
+            }
+
+            return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::redirectAction',  '_route' => 'ptut_redirect',);
+        }
+
         // ptut_platform_view
-        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+        if (0 === strpos($pathinfo, '/page') && preg_match('#^/page/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'ptut_platform_view')), array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::viewAction',));
         }
 
@@ -126,11 +135,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'ptut_platform_article')), array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::view_articleAction',));
             }
 
-        }
+            // ptut_platform_article_creator
+            if ($pathinfo === '/admin/creer') {
+                return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::article_creatorAction',  '_route' => 'ptut_platform_article_creator',);
+            }
 
-        // ptut_platform_article_creator
-        if ($pathinfo === '/creer/article') {
-            return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::article_creatorAction',  '_route' => 'ptut_platform_article_creator',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {

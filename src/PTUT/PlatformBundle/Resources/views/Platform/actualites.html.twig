@@ -127,7 +127,7 @@
                                                 <span><i class="icon-user"></i>John</span>
                                                 <span><i class="icon-folder-close"></i>Bootstrap</span>
                                                 <span><i class="icon-calendar"></i>Sept 16th, 2012</span>
-                                                <span><i class="icon-comment"></i>3 Comments</span>
+                                                <span><i class="icon-comment"></i> {{ articles[i+(id-1)*4].commentaires }}</span>
                                             </div>
                                             <p> {{ articles[i+(id-1)*4].presentation }}</p>
                                             {% set page = i+(id-1)*4+1 %}

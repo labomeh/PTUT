@@ -117,7 +117,7 @@
             <div class="col-sm-8 col-sm-pull-4">
                 <div class="blog">
                     {% for i in 0..3 %}
-                        {% if i+(id-1)*4 <= taille %}
+                        {% if i+(id-1)*4 <= taille-1 %}
                                 <div class="blog-item">
                                     {% set num = "asset('bundles/ptutplatform/images/blog/article_" ~ (i+1)+(id-1)*4 ~ ".jpg'" %}
                                     <img class="img-responsive img-blog" src="{{ asset('bundles/ptutplatform/images/blog/article_'~((i+1)+(id-1)*4)~'.jpg' ) }}" width="100%" alt="" />
@@ -199,19 +199,39 @@
                             <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
                     {% endif %}
                 </div>
+-->
                 <center>
                 <div class="pagination">
-                  <a href="#">&laquo;</a>
-                  <a href="#">1</a>
-                  <a href="#" class="active">2</a>
-                  <a href="#">3</a>
-                  <a href="#">4</a>
-                  <a href="#">5</a>
-                  <a href="#">6</a>
-                  <a href="#">&raquo;</a>
+                {% set prev = id - 1 %}
+                {% set next = id + 1 %}
+                    
+                {% if id != 1 %}
+                    <a href="{{path('ptut_platform_view_id', {'id': prev })}}">&laquo;</a>
+                {% else %}
+                    <a href="#">&laquo;</a>
+                {% endif %}
+                {% if id >= 3 %}
+                    {% set idMoins2 = id - 2%}
+                     <a href="{{path('ptut_platform_view_id', {'id': idMoins2 })}}">{{idMoins2}}</a>
+                {% endif %}
+                {% if id >= 2 %}
+                    <a href="{{path('ptut_platform_view_id', {'id': prev })}}">{{prev}}</a>
+                {% endif %}
+                    <a href="" class="active">{{id}}</a>
+                {% if id+1 <= (taille//4)+1 %}
+                    <a href="{{path('ptut_platform_view_id', {'id': next })}}">{{next}}</a>
+                {% endif %}
+                {% if id+2 <= (taille//4)+1 %}
+                    {% set idPlus2 = id + 2%}
+                    <a href="{{path('ptut_platform_view_id', {'id': idPlus2 })}}">{{idPlus2}}</a>
+                {% endif %}
+                {% if id < (taille//4)+1 %}
+                    <a href="{{path('ptut_platform_view_id', {'id': next })}}">&raquo;</a>
+                {% else %}
+                    <a href="#">&raquo;</a>
+                {% endif %}
                 </div>
                 </center>
         </div>
-         -->
     </section>
 {%endblock%}

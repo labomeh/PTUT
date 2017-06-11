@@ -80,6 +80,8 @@
   'DoctrineBundle:Collector:db.html.twig' => __DIR__.'/../../../vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => __DIR__.'/../../../vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig',
   'PTUTPlatformBundle:Platform:actualites.html.twig' => __DIR__.'/../../../src/PTUT/PlatformBundle/Resources/views/Platform/actualites.html.twig',
+  'PTUTPlatformBundle:Platform/articles:article_10.html.twig' => __DIR__.'/../../../src/PTUT/PlatformBundle/Resources/views/Platform/articles/article_10.html.twig',
+  'PTUTPlatformBundle:Platform/articles:article_11.html.twig' => __DIR__.'/../../../src/PTUT/PlatformBundle/Resources/views/Platform/articles/article_11.html.twig',
   'PTUTPlatformBundle:Platform:article_1.html.twig' => __DIR__.'/../../../src/PTUT/PlatformBundle/Resources/views/Platform/article_1.html.twig',
   'PTUTPlatformBundle:Platform:article_2.html.twig' => __DIR__.'/../../../src/PTUT/PlatformBundle/Resources/views/Platform/article_2.html.twig',
   'PTUTPlatformBundle:Platform:article_3.html.twig' => __DIR__.'/../../../src/PTUT/PlatformBundle/Resources/views/Platform/article_3.html.twig',

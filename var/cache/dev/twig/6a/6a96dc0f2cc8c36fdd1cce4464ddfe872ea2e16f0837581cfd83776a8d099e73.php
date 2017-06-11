@@ -15,11 +15,11 @@ class __TwigTemplate_133c100e45592e23d99a4c315bb0d2b7361fbfb09a8c923bdf732d98797
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1b18835df02f95b90052ec779238d7ef377f14891fa439836cd9bd6960822429 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1b18835df02f95b90052ec779238d7ef377f14891fa439836cd9bd6960822429->enter($__internal_1b18835df02f95b90052ec779238d7ef377f14891fa439836cd9bd6960822429_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/error.txt.twig"));
+        $__internal_a7f8579d50e8b6aff56fb85bca31f771b2e45b6e60abdc0e926fdcc670b8f5d5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a7f8579d50e8b6aff56fb85bca31f771b2e45b6e60abdc0e926fdcc670b8f5d5->enter($__internal_a7f8579d50e8b6aff56fb85bca31f771b2e45b6e60abdc0e926fdcc670b8f5d5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/error.txt.twig"));
 
-        $__internal_657c9c73437ba8d11e83c0daf18219d3b0d73e4784a67ce34979baad46e2fada = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_657c9c73437ba8d11e83c0daf18219d3b0d73e4784a67ce34979baad46e2fada->enter($__internal_657c9c73437ba8d11e83c0daf18219d3b0d73e4784a67ce34979baad46e2fada_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/error.txt.twig"));
+        $__internal_3f5d16281b872ad0062cba07fbf7a2605050db6f6ea03fb0bba0bc1eec0d38ea = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3f5d16281b872ad0062cba07fbf7a2605050db6f6ea03fb0bba0bc1eec0d38ea->enter($__internal_3f5d16281b872ad0062cba07fbf7a2605050db6f6ea03fb0bba0bc1eec0d38ea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/error.txt.twig"));
 
         // line 1
         echo "Oops! An Error Occurred
@@ -36,10 +36,10 @@ Something is broken. Please let us know what you were doing when this error occu
 We will fix it as soon as possible. Sorry for any inconvenience caused.
 ";
         
-        $__internal_1b18835df02f95b90052ec779238d7ef377f14891fa439836cd9bd6960822429->leave($__internal_1b18835df02f95b90052ec779238d7ef377f14891fa439836cd9bd6960822429_prof);
+        $__internal_a7f8579d50e8b6aff56fb85bca31f771b2e45b6e60abdc0e926fdcc670b8f5d5->leave($__internal_a7f8579d50e8b6aff56fb85bca31f771b2e45b6e60abdc0e926fdcc670b8f5d5_prof);
 
         
-        $__internal_657c9c73437ba8d11e83c0daf18219d3b0d73e4784a67ce34979baad46e2fada->leave($__internal_657c9c73437ba8d11e83c0daf18219d3b0d73e4784a67ce34979baad46e2fada_prof);
+        $__internal_3f5d16281b872ad0062cba07fbf7a2605050db6f6ea03fb0bba0bc1eec0d38ea->leave($__internal_3f5d16281b872ad0062cba07fbf7a2605050db6f6ea03fb0bba0bc1eec0d38ea_prof);
 
     }
 
@@ -75,6 +75,6 @@ The server returned a \"{{ status_code }} {{ status_text }}\".
 
 Something is broken. Please let us know what you were doing when this error occurred.
 We will fix it as soon as possible. Sorry for any inconvenience caused.
-", "@Twig/Exception/error.txt.twig", "C:\\wamp64\\www\\ptut\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\TwigBundle\\Resources\\views\\Exception\\error.txt.twig");
+", "@Twig/Exception/error.txt.twig", "C:\\wamp64\\www\\PTUT\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\TwigBundle\\Resources\\views\\Exception\\error.txt.twig");
     }
 }

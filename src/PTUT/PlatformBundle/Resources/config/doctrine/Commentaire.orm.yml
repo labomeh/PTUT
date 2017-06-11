@@ -15,8 +15,10 @@ PTUT\PlatformBundle\Entity\Commentaire:
         contenu:
             type: string
             length: '600'
+        article:
+            type: integer
         reponse:
             type: integer
         date:
-            type: time
+            type: datetime
     lifecycleCallbacks: {  }

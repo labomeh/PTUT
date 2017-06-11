@@ -124,9 +124,8 @@
                                         <div class="blog-content">
                                             <h3>{{ articles[i+(id-1)*4].titre }} </h3>
                                             <div class="entry-meta">
-                                                <span><i class="icon-user"></i>John</span>
-                                                <span><i class="icon-folder-close"></i>Bootstrap</span>
-                                                <span><i class="icon-calendar"></i>Sept 16th, 2012</span>
+                                                <span><i class="icon-user"></i>{{ articles[i+(id-1)*4].auteur }}</span>
+                                                <span><i class="icon-calendar"></i>{{ articles[i+(id-1)*4].date|date('d-m-Y') }}</span>
                                                 <span><i class="icon-comment"></i> {{ articles[i+(id-1)*4].commentaires }}</span>
                                             </div>
                                             <p> {{ articles[i+(id-1)*4].presentation }}</p>
@@ -161,8 +160,59 @@
                                               <h2 class="modal-title">{{ articles[i+(id-1)*4].titre }}</h2>
                                             </div>
                                             <div class="modal-body">
-                                              {% include "PTUTPlatformBundle:Platform:article_" ~ page ~ ".html.twig" %}
-                                            </div>
+                                                <div class="blog">
+                                                    <div class="blog-item">
+                                                        <div class="blog-content">
+                                                            <div>
+                                                              {% include "PTUTPlatformBundle:Platform:article_" ~ page ~ ".html.twig" %}
+                                                            </div>
+                                                            <div id="comments">
+                                                                <div id="comments-list">
+                                                                    <h3>{{ articles[i+(id-1)*4].commentaires }} Commentaires</h3>
+                                                                    {% for u in 0..(tailleCom-1) %}
+                                                                    {% if commentaire[u].reponse == -1 and commentaire[u].article == articles[i+(id-1)*4].id %}
+                                                                    <div class="media">
+                                                                        <div class="pull-left">
+                                                                            <img class="avatar img-circle" src="images/blog/avatar1.png" alt="">
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="well">
+                                                                                <div class="media-heading">
+                                                                                    <strong>{{ commentaire[u].auteur }}</strong>&nbsp; <small>{{ commentaire[u].date|date('d-m-Y H:i:s') }}</small>
+                                                                                    <a class="pull-right" href="#"><i class="icon-repeat"></i> Reply</a>
+                                                                                </div>
+                                                                                <p>{{ commentaire[u].contenu }}</p>
+                                                                            </div>
+                                                                            <div class="col-sm-10 pull-right">
+                                                                                {% for j in 0..(tailleCom-1) %}
+                                                                                {% if commentaire[j].reponse == commentaire[u].id %}
+                                                                                <div class="media">
+                                                                                    <div class="pull-left">
+                                                                                        <img class="avatar img-circle" src="images/blog/avatar1.png" alt="">
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <div class="well">
+                                                                                            <div class="media-heading">
+                                                                                                <strong>{{ commentaire[j].auteur }}</strong>&nbsp; <small>{{ commentaire[j].date|date('d-m-Y H:i:s') }}</small>
+                                                                                                <a class="pull-right" href="#"><i class="icon-repeat"></i> Reply</a>
+                                                                                            </div>
+                                                                                            <p>{{ commentaire[j].contenu }}</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                {% endif %}
+                                                                                {% endfor %}
+                                                                            </div><!--/.media-->
+                                                                        </div>
+                                                                    </div><!--/.media-->
+                                                                    {% endif %}
+                                                                    {% endfor %}
+                                                                </div><!--/#comments-list-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
                                             <div class="modal-footer">
                                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                             </div>
@@ -177,29 +227,6 @@
                         </div>
                     </div>
                 </div>
-                <!--
-                    <div class="btn-group col-sm-12">
-                    {% if taille/2 >= 4 %}
-
-                            {% if id > 1 %}
-                                {% set prev = id - 1 %}
-                                <a class="btn btn-danger" href="{{path('ptut_platform_view_id', {'id': prev })}}" data-slide="next"><i class="icon-angle-left"></i></a>
-                            {% else %}
-                                <a class="btn btn-danger" href="" data-slide="next"><i class="icon-angle-left"></i></a>
-                            {% endif %}
-                            <p class="btn btn-danger">{{id}}</p>
-                            {% if id < taille//2+1 %}
-                                {% set next = id + 1 %}
-                                <a class="btn btn-danger" href="{{path('ptut_platform_view_id', {'id': next })}}" data-slide="next"><i class="icon-angle-right"></i></a>
-                            {% else %}
-                                <a class="btn btn-danger" href="" data-slide="next"><i class="icon-angle-right"></i></a>
-                            {% endif %}
-                    {% elseif taille/2 >= 4%}
-                            <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
-                            <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
-                    {% endif %}
-                </div>
--->
                 <center>
                 <div class="pagination">
                 {% set prev = id - 1 %}

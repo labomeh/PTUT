@@ -21,7 +21,10 @@ class PlatformController extends Controller
     {
         $repository = $this->getDoctrine()->getRepository("PTUTPlatformBundle:Article");
         $articles = $repository->findAll();
-        $content = $this->get('templating')->render('PTUTPlatformBundle:Platform:actualites.html.twig', array('articles' => $articles, 'id' => $id, 'taille' => sizeof($articles)));
+        $repository2 = $this->getDoctrine()->getRepository("PTUTPlatformBundle:Commentaire");
+        $commentaire = $repository2->findAll();
+        
+        $content = $this->get('templating')->render('PTUTPlatformBundle:Platform:actualites.html.twig', array('articles' => $articles, 'id' => $id, 'taille' => sizeof($articles), 'commentaire' => $commentaire, 'tailleCom' => sizeof($commentaire)));
         return new Response($content);
     }
     

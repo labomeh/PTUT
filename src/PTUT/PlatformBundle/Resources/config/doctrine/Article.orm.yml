@@ -20,4 +20,6 @@ PTUT\PlatformBundle\Entity\Article:
         auteur:
             type: string
             length: 255
+        commentaires:
+            type: integer
     lifecycleCallbacks: {  }

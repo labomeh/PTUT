@@ -1,1 +1,1 @@
-a:2:{i:0;C:46:"Symfony\Component\Config\Resource\FileResource":49:{s:41:"C:\wamp64\www\ptut\app\config\routing.yml";}i:1;C:46:"Symfony\Component\Config\Resource\FileResource":79:{s:71:"C:\wamp64\www\ptut\src\PTUT\PlatformBundle\Resources\config\routing.yml";}}
+a:2:{i:0;C:46:"Symfony\Component\Config\Resource\FileResource":47:{s:39:"C:\wamp\www\ptut\app\config\routing.yml";}i:1;C:46:"Symfony\Component\Config\Resource\FileResource":77:{s:69:"C:\wamp\www\ptut\src\PTUT\PlatformBundle\Resources\config\routing.yml";}}

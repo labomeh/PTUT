@@ -34,7 +34,7 @@ class Commentaire
      * @ORM\Column(name="contenu", type="string", length=600, nullable=false)
      */
     private $contenu;
-    
+
     /**
      * @var integer
      *
@@ -155,34 +155,5 @@ class Commentaire
     public function getDate()
     {
         return $this->date;
-    }
-    /**
-     * @var integer
-     */
-    private $article;
-
-
-    /**
-     * Set article
-     *
-     * @param integer $article
-     *
-     * @return Commentaire
-     */
-    public function setArticle($article)
-    {
-        $this->article = $article;
-    
-        return $this;
-    }
-
-    /**
-     * Get article
-     *
-     * @return integer
-     */
-    public function getArticle()
-    {
-        return $this->article;
     }
 }

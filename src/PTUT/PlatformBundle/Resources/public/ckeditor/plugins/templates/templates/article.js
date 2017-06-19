@@ -5,19 +5,21 @@ CKEDITOR.addTemplates( 'default',
 	templates :
 		[
 			{
-				title: 'Article 1',
+				title: 'Article par défaut',
 				image: 'article1.gif',
-				description: 'Article de base en deux parties.',
+				description: 'Article de base à modifier.',
 				html:
-                    '<h3>'+
-					'<div class="blog-item">'+
-                    '<img class="img-responsive img-blog" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="Image" />'+
-                    'Type the title here' +
-                    '</h3>' +  
-                    '<p>' +
-                    'Type the text here' +
-                    '</p>'+
-                    '</div>'
+                                '<div class="blog">'+
+                                    
+                                                '<div class="blog-item">'+
+                                                    '<img class="img-responsive img-blog" src=" " alt="Image à remplacer" />'+
+                                                        '<div class="blog-content">'+
+                                                            '<h3>Titre de l\'article</h3>'+
+                                                            '<p>Paragraphe</p>'+
+                                                        '</div>'+
+                                                '</div>'+
+
+                                '</div>'
 			}
 		]
 });

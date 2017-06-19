@@ -45,15 +45,12 @@ class PlatformController extends Controller
             $articles = $repository->findAll();
             $id = sizeof($articles) + 1;
             $file=fopen('../src/PTUT/PlatformBundle/Resources/views/Platform/articles/article_'.$id.'.html.twig','w');
-            fwrite($file,'{% extends "PTUTPlatformBundle:Platform:layout.html.twig" %}');
-            fwrite($file,'{% block body %}');
             fwrite($file,$_POST['content_editor']);
-            fwrite($file,'{% endblock %} ');
             fclose($file);
             
             //File upload
-            $target_dir = "../web/bundles/ptutplatform/images/thumbnails/";
-            $target_file = $target_dir . basename($_FILES["miniature"]["name"]);
+            $target_dir = "../web/bundles/ptutplatform/images/blog/";
+            $target_file = $target_dir . "article_" . $id . ".jpg";
             $uploadOk = 1;
             $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
             // Check if image file is a actual image or fake image
@@ -100,6 +97,7 @@ class PlatformController extends Controller
             $article->setAuteur($_POST['autor']);
             $article->setPresentation($_POST['presentation']);
             $article->setDate(new \DateTime('now'));
+            $article->setCommentaires(0);
                 
             
             $em = $this->getDoctrine()->getManager();

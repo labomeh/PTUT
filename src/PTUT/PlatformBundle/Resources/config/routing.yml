@@ -1,6 +1,10 @@
 ptut_platform_homepage:
     path:     /home
     defaults: { _controller: PTUTPlatformBundle:Platform:index }
+
+ptut_platform_about:
+    path:     /about
+    defaults: { _controller: PTUTPlatformBundle:Platform:about }
     
 ptut_redirect:
     path: /

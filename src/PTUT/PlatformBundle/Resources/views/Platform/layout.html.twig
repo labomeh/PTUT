@@ -40,8 +40,7 @@
                 <span class="icon-bar"></span>
               </button>
                 
-              <a class="navbar-brand" href="{{ path('ptut_platform_homepage') }}">PTUT S2</a>
-              <a class="navbar-brand" href="{{path('ptut_platform_homepage')}}">Festival de cinéma amateur</a>
+              <a class="navbar-brand" href="{{ path('ptut_platform_homepage') }}"><img height="50" src="{{ asset('bundles/ptutplatform/images/logo.png')}}"></a>
                 
             </div>
             <div id="navbar" class="collapse navbar-collapse">
@@ -49,7 +48,7 @@
                 <li class="{% block ongletHome %} {% endblock %}"><a href="{{ path('ptut_platform_homepage') }}">Accueil</a></li>
                 <li class="dropdown {% block ongletEditions %} {% endblock %}"><a href="{{path('ptut_platform_view_id', {'id': 1})}}">Actualités</a></li>
 				<!--<li class="{% block ongletArticle %} {% endblock %}"><a href="{{path('ptut_platform_view', {'id': 2})}}">Articles</a></li>-->
-                <li class="{% block ongletAbout %} {% endblock %}"><a href="#about">About</a></li>
+                <li class="{% block ongletAbout %} {% endblock %}"><a href="{{ path('ptut_platform_about') }}">A propos</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -68,7 +67,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="media">
                         <div class="pull-left">
-                            <i class="icon-twitter icon-md"></i>
+                            <a class="icon-twitter icon-md" href="http://twitter.com"></a>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Twitter Marketing</h3>
@@ -79,7 +78,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="media">
                         <div class="pull-left">
-                            <i class="icon-facebook icon-md"></i>
+                            <a class="icon-facebook icon-md" href="http://facebook.com"></a>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Facebook Marketing</h3>
@@ -90,7 +89,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="media">
                         <div class="pull-left">
-                            <i class="icon-google-plus icon-md"></i>
+                            <a class="icon-google-plus icon-md" href="http://plus.google.com"></a>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Google Plus Marketing</h3>

@@ -22,47 +22,47 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b46a4f450a8d97906e4fd66541937f5553dd5f1bbe2c0d5f20a12888ef744d39 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b46a4f450a8d97906e4fd66541937f5553dd5f1bbe2c0d5f20a12888ef744d39->enter($__internal_b46a4f450a8d97906e4fd66541937f5553dd5f1bbe2c0d5f20a12888ef744d39_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@PTUTPlatform/Platform/home.html.twig"));
+        $__internal_edfe720239baf17bfa534d759504df5292974572f7686a738d2b76e41d4a0da1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_edfe720239baf17bfa534d759504df5292974572f7686a738d2b76e41d4a0da1->enter($__internal_edfe720239baf17bfa534d759504df5292974572f7686a738d2b76e41d4a0da1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@PTUTPlatform/Platform/home.html.twig"));
 
-        $__internal_a7b3425df6fa103721d8e8dfcc006484a3b60ada769cc0aa050ce95e3066533a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a7b3425df6fa103721d8e8dfcc006484a3b60ada769cc0aa050ce95e3066533a->enter($__internal_a7b3425df6fa103721d8e8dfcc006484a3b60ada769cc0aa050ce95e3066533a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@PTUTPlatform/Platform/home.html.twig"));
+        $__internal_cd8582e72954cf74a0f57ddece63a8c952154a9057a15b7f12cd3bd5173521e9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cd8582e72954cf74a0f57ddece63a8c952154a9057a15b7f12cd3bd5173521e9->enter($__internal_cd8582e72954cf74a0f57ddece63a8c952154a9057a15b7f12cd3bd5173521e9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@PTUTPlatform/Platform/home.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b46a4f450a8d97906e4fd66541937f5553dd5f1bbe2c0d5f20a12888ef744d39->leave($__internal_b46a4f450a8d97906e4fd66541937f5553dd5f1bbe2c0d5f20a12888ef744d39_prof);
+        $__internal_edfe720239baf17bfa534d759504df5292974572f7686a738d2b76e41d4a0da1->leave($__internal_edfe720239baf17bfa534d759504df5292974572f7686a738d2b76e41d4a0da1_prof);
 
         
-        $__internal_a7b3425df6fa103721d8e8dfcc006484a3b60ada769cc0aa050ce95e3066533a->leave($__internal_a7b3425df6fa103721d8e8dfcc006484a3b60ada769cc0aa050ce95e3066533a_prof);
+        $__internal_cd8582e72954cf74a0f57ddece63a8c952154a9057a15b7f12cd3bd5173521e9->leave($__internal_cd8582e72954cf74a0f57ddece63a8c952154a9057a15b7f12cd3bd5173521e9_prof);
 
     }
 
     // line 3
     public function block_ongletHome($context, array $blocks = array())
     {
-        $__internal_8e74ef66e632045f6fbd429cbffa23a6671fa841759e8effe04116a60137f274 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8e74ef66e632045f6fbd429cbffa23a6671fa841759e8effe04116a60137f274->enter($__internal_8e74ef66e632045f6fbd429cbffa23a6671fa841759e8effe04116a60137f274_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_69f644868c62c55dd9fc21132ab3effa9dba829e109934a25c518f2acacfeab3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_69f644868c62c55dd9fc21132ab3effa9dba829e109934a25c518f2acacfeab3->enter($__internal_69f644868c62c55dd9fc21132ab3effa9dba829e109934a25c518f2acacfeab3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
-        $__internal_8dfaaffed90315382a7e8301b9f61395e86dbbce6a47d447e08428a586349615 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8dfaaffed90315382a7e8301b9f61395e86dbbce6a47d447e08428a586349615->enter($__internal_8dfaaffed90315382a7e8301b9f61395e86dbbce6a47d447e08428a586349615_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
+        $__internal_5f8b4bdd548795c5af4c765a778f41e540711450e14968a124d4e2a53016cecc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5f8b4bdd548795c5af4c765a778f41e540711450e14968a124d4e2a53016cecc->enter($__internal_5f8b4bdd548795c5af4c765a778f41e540711450e14968a124d4e2a53016cecc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "ongletHome"));
 
         echo "active";
         
-        $__internal_8dfaaffed90315382a7e8301b9f61395e86dbbce6a47d447e08428a586349615->leave($__internal_8dfaaffed90315382a7e8301b9f61395e86dbbce6a47d447e08428a586349615_prof);
+        $__internal_5f8b4bdd548795c5af4c765a778f41e540711450e14968a124d4e2a53016cecc->leave($__internal_5f8b4bdd548795c5af4c765a778f41e540711450e14968a124d4e2a53016cecc_prof);
 
         
-        $__internal_8e74ef66e632045f6fbd429cbffa23a6671fa841759e8effe04116a60137f274->leave($__internal_8e74ef66e632045f6fbd429cbffa23a6671fa841759e8effe04116a60137f274_prof);
+        $__internal_69f644868c62c55dd9fc21132ab3effa9dba829e109934a25c518f2acacfeab3->leave($__internal_69f644868c62c55dd9fc21132ab3effa9dba829e109934a25c518f2acacfeab3_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_76c62a2f503b806d520f24b76a819989439f7771e45a2ddb9d35f398a96ab7bb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_76c62a2f503b806d520f24b76a819989439f7771e45a2ddb9d35f398a96ab7bb->enter($__internal_76c62a2f503b806d520f24b76a819989439f7771e45a2ddb9d35f398a96ab7bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_641e6281726b041b611f9c5a0dbcd7bde0db885d1aa284cc217a45f57893a4d8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_641e6281726b041b611f9c5a0dbcd7bde0db885d1aa284cc217a45f57893a4d8->enter($__internal_641e6281726b041b611f9c5a0dbcd7bde0db885d1aa284cc217a45f57893a4d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_e5db11944f5fd8a97ed0a38311e01ec8ea013e862cbe26f92acc841ffb0e50ef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e5db11944f5fd8a97ed0a38311e01ec8ea013e862cbe26f92acc841ffb0e50ef->enter($__internal_e5db11944f5fd8a97ed0a38311e01ec8ea013e862cbe26f92acc841ffb0e50ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6d28a1bedca2058889e63cf0f192d92f621b2a6176488c0cc670066aaf3fc676 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6d28a1bedca2058889e63cf0f192d92f621b2a6176488c0cc670066aaf3fc676->enter($__internal_6d28a1bedca2058889e63cf0f192d92f621b2a6176488c0cc670066aaf3fc676_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         echo " 
 
@@ -85,7 +85,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Le festival du cinéma vous ouvre ses portes</h2>
                                     <p class=\"animation animated-item-2\">Du 10 au 20 Mai 2017</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +98,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Bienvenue à Gattaca</h2>
                                     <p class=\"animation animated-item-2\">Projections supplémentaires</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +111,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Heis</h2>
                                     <p class=\"animation animated-item-2\">Le cinéma français à l'honneur</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +124,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Guerrière</h2>
                                     <p class=\"animation animated-item-2\">Un film à fleur de peau</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +137,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">The Man From Earth</h2>
                                     <p class=\"animation animated-item-2\">Un huis clos captivant</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +150,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Manchester by the sea</h2>
                                     <p class=\"animation animated-item-2\">De Casey Affleck</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                             <!--
@@ -181,10 +175,10 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
     </section>
 ";
         
-        $__internal_e5db11944f5fd8a97ed0a38311e01ec8ea013e862cbe26f92acc841ffb0e50ef->leave($__internal_e5db11944f5fd8a97ed0a38311e01ec8ea013e862cbe26f92acc841ffb0e50ef_prof);
+        $__internal_6d28a1bedca2058889e63cf0f192d92f621b2a6176488c0cc670066aaf3fc676->leave($__internal_6d28a1bedca2058889e63cf0f192d92f621b2a6176488c0cc670066aaf3fc676_prof);
 
         
-        $__internal_76c62a2f503b806d520f24b76a819989439f7771e45a2ddb9d35f398a96ab7bb->leave($__internal_76c62a2f503b806d520f24b76a819989439f7771e45a2ddb9d35f398a96ab7bb_prof);
+        $__internal_641e6281726b041b611f9c5a0dbcd7bde0db885d1aa284cc217a45f57893a4d8->leave($__internal_641e6281726b041b611f9c5a0dbcd7bde0db885d1aa284cc217a45f57893a4d8_prof);
 
     }
 
@@ -238,7 +232,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Le festival du cinéma vous ouvre ses portes</h2>
                                     <p class=\"animation animated-item-2\">Du 10 au 20 Mai 2017</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +245,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Bienvenue à Gattaca</h2>
                                     <p class=\"animation animated-item-2\">Projections supplémentaires</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -266,7 +258,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Heis</h2>
                                     <p class=\"animation animated-item-2\">Le cinéma français à l'honneur</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +271,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Guerrière</h2>
                                     <p class=\"animation animated-item-2\">Un film à fleur de peau</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +284,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">The Man From Earth</h2>
                                     <p class=\"animation animated-item-2\">Un huis clos captivant</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -308,7 +297,6 @@ class __TwigTemplate_61d987fcaea054161f98e630f7675b17a0704e73bedbc33b62ce5da316d
                                 <div class=\"carousel-content centered\">
                                     <h2 class=\"animation animated-item-1\">Manchester by the sea</h2>
                                     <p class=\"animation animated-item-2\">De Casey Affleck</p>
-\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md animation animated-item-3\" href=\"#\">En savoir plus</a>
                                 </div>
                             </div>
                             <!--

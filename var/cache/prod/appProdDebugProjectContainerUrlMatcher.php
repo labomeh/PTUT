@@ -32,6 +32,11 @@ class appProdDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
             return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::indexAction',  '_route' => 'ptut_platform_homepage',);
         }
 
+        // ptut_platform_about
+        if ($pathinfo === '/about') {
+            return array (  '_controller' => 'PTUT\\PlatformBundle\\Controller\\PlatformController::aboutAction',  '_route' => 'ptut_platform_about',);
+        }
+
         // ptut_redirect
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

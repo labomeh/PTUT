@@ -3,6 +3,7 @@
 namespace PTUT\PlatformBundle\Controller;
 
 use PTUT\PlatformBundle\Entity\Article;
+use PTUT\PlatformBundle\Entity\Commentaire;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\SecurityContext;
@@ -17,8 +18,32 @@ class PlatformController extends Controller
         return new Response($content);
     }
     
+    public function aboutAction()
+    {
+        $content = $this->get('templating')->render('PTUTPlatformBundle:Platform:about.html.twig');
+        return new Response($content);
+    }
+    
     public function viewidAction($id)
     {
+        
+        if(isset($_POST['content'])){
+            $commentaire2 = new Commentaire();
+            $commentaire2->setAuteur($_POST['author']);
+            $commentaire2->setContenu($_POST['content']);
+            $commentaire2->setArticle($_POST['article']);
+            $commentaire2->setReponse($_POST['parent']);
+            $date=new \DateTime('now');
+            $date->setTimezone(new \DateTimeZone('Europe/Paris')); 
+            $commentaire2->setDate($date);
+            
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($commentaire2);
+            $em->flush();
+            
+            unset($_POST);
+        }
+        
         $repository = $this->getDoctrine()->getRepository("PTUTPlatformBundle:Article");
         $articles = $repository->findAll();
         $repository2 = $this->getDoctrine()->getRepository("PTUTPlatformBundle:Commentaire");
@@ -57,38 +82,38 @@ class PlatformController extends Controller
             if(isset($_POST["submit"])) {
                 $check = getimagesize($_FILES["miniature"]["tmp_name"]);
                 if($check !== false) {
-                    echo "File is an image - " . $check["mime"] . ".";
+                    echo "<div class='alert alert-danger'>Le fichier est une image - " . $check["mime"] . ".</div>";
                     $uploadOk = 1;
                 } else {
-                    echo "File is not an image.";
+                    echo "<div class='alert alert-danger'>Le fichier n'est pas une image.</div>";
                     $uploadOk = 0;
                 }
             }
             // Check if file already exists
             if (file_exists($target_file)) {
-                echo "Sorry, file already exists.";
+                echo "<div class='alert alert-danger'>Désolé, le fichier éxiste déjà.</div>";
                 $uploadOk = 0;
             }
             // Check file size
             if ($_FILES["miniature"]["size"] > $_POST['MAX_FILE_SIZE']) {
-                echo "Sorry, your file is too large.";
+                echo "<div class='alert alert-danger'>Désolé, le fichier est trop volumineux.</div>";
                 $uploadOk = 0;
             }
             // Allow certain file formats
             if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
             && $imageFileType != "gif" ) {
-                echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+                echo "<div class='alert alert-danger'>Désolé, seules les fichiers JPG, JPEG, PNG et GIF sont autorisés.</div>";
                 $uploadOk = 0;
             }
             // Check if $uploadOk is set to 0 by an error
             if ($uploadOk == 0) {
-                echo "Sorry, your file was not uploaded.";
+                echo "<div class='alert alert-danger'>Désolé, votre fichier n'a pas été envoyé.</div>";
             // if everything is ok, try to upload file
             } else {
                 if (move_uploaded_file($_FILES["miniature"]["tmp_name"], $target_file)) {
-                    echo "The file ". basename( $_FILES["miniature"]["name"]). " has been uploaded.";
+                    echo "<div class='alert alert-success'>Le fichier ". basename( $_FILES["miniature"]["name"]). " a été uploadé.</div>";
                 } else {
-                    echo "Sorry, there was an error uploading your file.";
+                    echo "<div class='alert alert-danger'>Désolé il y a eu une erreur lors de l'envoi du fichier.</div>";
                 }
             }
             
@@ -96,7 +121,9 @@ class PlatformController extends Controller
             $article->setTitre($_POST['titre']);
             $article->setAuteur($_POST['autor']);
             $article->setPresentation($_POST['presentation']);
-            $article->setDate(new \DateTime('now'));
+            $date=new \DateTime('now');
+            $date->setTimezone(new \DateTimeZone('Europe/Paris')); 
+            $article->setDate($date);
             $article->setCommentaires(0);
                 
             
